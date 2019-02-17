@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
+
+.bg-green {
+  background: #259c24 !important;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.white-text {
+  color: #ffffff !important;
+}
+
+.white-text-icon {
+  color: #ffffff !important;
+}
+
+.white-text-icon:hover {
+  color: #f0f0f0 !important;
+}
+
+.font-family-fredoka-one {
+  font-family: "Fredoka One", sans-serif !important;
+}
+
+.font-family-roboto {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300 !important;
+}
+
+p {
+  font-weight: normal !important;
+}
+
+body {
+}

@@ -9,6 +9,10 @@
   text-align: center !important;
 }
 
+.bg-black-04 {
+  background: rgba(15, 64, 14, 0.25) !important;
+}
+
 .white-text {
   color: #ffffff !important;
 }

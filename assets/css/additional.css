@@ -18,7 +18,7 @@
     background: #f0f0f0 !important;
   }
 }
- 
+
 @media (min-width: 992px) {
   .navbar .nav .nav-item .nav-link {
     line-height: 80px !important;

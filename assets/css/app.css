@@ -11156,7 +11156,7 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   background: #141414;
   width: 100%;
   height: 100%;
-  cursor: url(../images/cursor.png), auto;
+  cursor: url(./images/cursor.png), auto;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }

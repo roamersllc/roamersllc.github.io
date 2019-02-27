@@ -1,16 +1,49 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.footer {
+  padding: 40px 0 !important;
+  height: 00px !important;
+}
+
+.footer #map-canvas {
+  width: 100% !important;
+  height: 0px !important;
+}
+
+@media (max-width: 992px) {
+  .footer #map-canvas {
+    height: 0px !important;
+  }
+}
+
+.footer-bottom {
+  padding: 0px 0 !important;
+}
+
+.footer-bottom .row {
+  margin-bottom: 0px !important;
+}
+
+.footer-bottom .row div[class^="col-"], .footer-bottom .row div[class*=" col-"] {
+  margin-bottom: 0px !important;
+}
 
 .navbar {
-  height: 80px !important;
+  height: 100px !important;
 }
 
 .navbar .nav .nav-item .nav-link {
-  font: 400 13px "google sans", sans-serif !important;
+  font: 400 14px "Poppins", sans-serif !important;
 }
 
 .navbar .nav .nav-item .dropdown-menu {
-  top: 80px !important;
+  top: 100px !important;
 }
 
 @media (min-width: 992px) {.navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu,
@@ -21,16 +54,16 @@
 
 @media (min-width: 992px) {
   .navbar .nav .nav-item .nav-link {
-    line-height: 80px !important;
+    line-height: 100px !important;
   }
 }
 
 @media (max-width: 992px) {
   .navbar .container, .navbar .container-fluid {
-    height: 80px !important;
+    height: 100px !important;
   }
   .navbar .nav {
-    top: 80px !important;
+    top: 100px !important;
     -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
   }
@@ -40,12 +73,12 @@
 }
 
 .navbar-placeholder-padding {
-  padding-top: 80px !important;
+  padding-top: 100px !important;
 }
 
 @media (min-width: 992px) {
   .navbar .nav .nav-item.nav-megadropdown .mega-menu {
-    top: 80px !important;
+    top: 100px !important;
     -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0) !important;
   }
@@ -97,7 +130,7 @@ a {
 }
 
 .letter-spacing-custom {
-  letter-spacing: 1px;
+  letter-spacing: .85px;
 }
 
 .fullscreen-menu {
@@ -106,12 +139,12 @@ a {
 
 .fullscreen-toggle-btn .lines {
   width: 20px !important;
-  background: #009C3C !important;
+  background: #4A2D41 !important;
 }
 
 .fullscreen-toggle-btn .lines:before, .fullscreen-toggle-btn .lines:after {
   width: 20px !important;
-  background: #009C3C !important;
+  background: #4A2D41 !important;
 }
 
 .bg-light-green {
@@ -119,7 +152,7 @@ a {
 }
 
 .bg-light-purple {
-  background: #A496A0;
+  background: #E9D6DD;
 }
 
 .bg-purple {
@@ -171,7 +204,7 @@ a {
 }
 
 .font-family-roboto {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
     font-weight: 400 !important;
 }
 

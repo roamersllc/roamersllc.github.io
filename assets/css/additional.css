@@ -31,7 +31,7 @@
 }
 
 .bg-overlay-recipes {
-    background: linear-gradient(rgba(0,156,60,.3), rgba(0,156,60,.3)), url("https://roamersllc.github.io/assets/images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw.png");
+    background: linear-gradient(rgba(0,156,60,.2), rgba(0,156,60,.2)), url("https://roamersllc.github.io/assets/images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

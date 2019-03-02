@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 .bg-overlay-supefood-mix {
-    background: linear-gradient(rgba(20,55,80,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+    background: linear-gradient(rgba(74,45,65,.7), rgba(74,45,65,.7)), url("https://roamersllc.github.io/assets/images/photographs/superfood-mix-bw-light.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -13,7 +13,7 @@
 }
 
 .bg-overlay-recipes {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+    background: linear-gradient(rgba(0,156,60,.7), rgba(0,156,60,.7)), url("https://roamersllc.github.io/assets/images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw-light.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

@@ -36,12 +36,21 @@
   }
 }
 
+.strokeme
+{
+    text-shadow:
+    -2px -2px 10px rgba(0,0,0,.75),
+    2px -2px 10px rgba(0,0,0,.75),
+    -2px 2px 10px rgba(0,0,0,.75),
+    2px 2px 10px rgba(0,0,0,.75);
+}
+
 .standard-case {
   text-transform: none !important;
 }
 
 .bg-overlay-footer {
-    background: url("https://roamersllc.github.io/assets/images/photographs/roamers-plant-powered-people.png");
+    background: url("../images/photographs/roamers-plant-powered-people.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -52,18 +61,18 @@
 }
 
 .bg-overlay-header {
-    background: linear-gradient(rgba(219,157,71,.4), rgba(219,157,71,.4)), url("https://roamersllc.github.io/assets/images/photographs/roamers-banana-blueberry-superfood-mix-spinach-long-bw.jpg");
+    background: url("../images/photographs/roamers-banana-blueberry-superfood-mix-spinach-long.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    opacity: 1.0;
+    opacity: .8;
     color: #fff;
     height: 600px;
     padding-top: 0px;
 }
 
 .bg-overlay-superfood-mix {
-    background: linear-gradient(rgba(74,45,65,.5), rgba(74,45,65,.5)), url("https://roamersllc.github.io/assets/images/photographs/superfood-mix-bw-light.png");
+    background: linear-gradient(rgba(74,45,65,.5), rgba(74,45,65,.5)), url("../images/photographs/superfood-mix-bw-light.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -73,7 +82,7 @@
 }
 
 .bg-overlay-recipes {
-    background: linear-gradient(rgba(0,156,60,.2), rgba(0,156,60,.2)), url("https://roamersllc.github.io/assets/images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw.png");
+    background: linear-gradient(rgba(0,156,60,.2), rgba(0,156,60,.2)), url("../images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -265,6 +274,10 @@ a {
 
 .bg-light-grey {
   background: #f0f0f0;
+}
+
+.light-grey-text {
+  color: #f0f0f0;
 }
 
 .bg-orange {

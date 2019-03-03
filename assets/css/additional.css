@@ -45,6 +45,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: .5;
     color: #fff;
     height: 600px;
     padding-top: 0px;

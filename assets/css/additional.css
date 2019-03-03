@@ -2,6 +2,26 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+
+.block-square {
+    height: 200px !important;
+    width: 100% !important;
+  }
+
+@media (min-width: 992px) {
+.block-square {
+    height: 230px !important;
+    width: 100% !important;
+  }
+  }
+
+@media (min-width: 1200px) {
+.block-square {
+    height: 200px !important;
+    width: 100% !important;
+  }
+  }
+
 @media (min-width: 992px) {
 .larger-text {
   font-size: 24px !important;
@@ -9,7 +29,7 @@
 }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   .larger-text {
     font-size: 40px;
     line-height: 56px;
@@ -18,6 +38,16 @@
 
 .standard-case {
   text-transform: none !important;
+}
+
+.bg-overlay-header {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("https://roamersllc.github.io/assets/images/photographs/roamers-banana-blueberry-superfood-mix-spinach-long-bw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 600px;
+    padding-top: 0px;
 }
 
 .bg-overlay-superfood-mix {
@@ -66,26 +96,6 @@ a.divLink {
     /*workaround to make clickable in IE */
     filter: alpha(opacity=0);
     /*workaround to make clickable in IE */
-}
-
-.block-square {
-    height:calc(50% - 15px);
-    width: 100% !important;
-  }
-
-.images {
-
-  zoom: 2;  //increase if you have very small images
-
-      display: block;
-      margin: auto;
-object-fit: cover;
-      height: auto;
-      max-height: 100%;
-
-      width: auto;
-      max-width: 100%;
-
 }
 
 .font-weight-600 {
@@ -220,7 +230,7 @@ a {
 }
 
 .letter-spacing-custom {
-  letter-spacing: .85px;
+  letter-spacing: .9px;
 }
 
 .fullscreen-menu {
@@ -229,42 +239,33 @@ a {
 
 .fullscreen-toggle-btn .lines {
   width: 20px !important;
-  background: #4A2D41 !important;
+  background: #006341 !important;
 }
 
 .fullscreen-toggle-btn .lines:before, .fullscreen-toggle-btn .lines:after {
   width: 20px !important;
-  background: #4A2D41 !important;
+  background: #006341 !important;
 }
 
 .bg-light-green {
   background: #DCF0E2;
 }
 
-.bg-light-purple {
-  background: #E9D6DD;
-}
-
-.bg-purple {
-  background: #4A2D41;
+.bg-light-grey {
+  background: #f0f0f0;
 }
 
 .bg-orange {
   background: #DB9D47;
 }
 
-.purple-text {
-  color: #4A2D41 !important;
+.dark-green-text {
+  color: #004d21 !important;
 }
 
 .green-text {
   color: #009C3C !important;
 }
-
-.bg-green {
-  background: #009C3C;
-}
-
 .align-center {
   text-align: center !important;
 }

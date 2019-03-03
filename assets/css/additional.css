@@ -108,6 +108,7 @@ div.box:hover {
     cursor: hand;
     cursor: pointer;
     opacity: .8;
+      font-size: 90px !important;
 }
 
 a.divLink {

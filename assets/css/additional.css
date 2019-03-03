@@ -2,6 +2,19 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+.button-purple, a.button-purple {
+  background: #540D6E;
+  border-color: #540D6E;
+  color: #fff !important;
+  padding: 10px;
+}
+
+.button-purple:hover, .button-purple:focus, a.button-purple:hover, a.button-purple:focus {
+  background: #824F95;
+  border-color: #824F95;
+  color: #fff !important;
+  padding: 10px;
+}
 
 .block-square {
     height: 200px !important;
@@ -56,6 +69,10 @@
 
 .standard-case {
   text-transform: none !important;
+}
+
+.product-single .product-single-img .product-single-img-nav {
+  width: 80px !important;
 }
 
 .bg-overlay-footer {

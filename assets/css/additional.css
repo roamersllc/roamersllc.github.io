@@ -40,8 +40,19 @@
   text-transform: none !important;
 }
 
+.bg-overlay-footer {
+    background: url("https://roamersllc.github.io/assets/images/photographs/roamers-plant-powered-people.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: .8;
+    color: #fff;
+    height: 600px;
+    padding-top: 0px;
+}
+
 .bg-overlay-header {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("https://roamersllc.github.io/assets/images/photographs/roamers-banana-blueberry-superfood-mix-spinach-long-bw.jpg");
+    background: linear-gradient(rgba(219,157,71,.4), rgba(219,157,71,.4)), url("https://roamersllc.github.io/assets/images/photographs/roamers-banana-blueberry-superfood-mix-spinach-long-bw.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

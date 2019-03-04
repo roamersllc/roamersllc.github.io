@@ -92,11 +92,11 @@
 }
 
 .bg-overlay-header {
-    background: url("../images/photographs/roamers-banana-blueberry-superfood-mix-spinach-long.jpg");
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/photographs/roamers-banana-blueberry-superfood-mix-spinach-long.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    opacity: .8;
+    opacity: 1.0;
     color: #fff;
     height: 600px;
     padding-top: 0px;

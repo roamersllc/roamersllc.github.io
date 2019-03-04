@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+.font-size-14 {
+  font-size: 14px;
+  line-height: px;
+}
+
 .button-purple, a.button-purple {
   background: #540D6E;
   border-color: #540D6E;
@@ -349,6 +354,11 @@ a {
 }
 
 .font-family-roboto {
+  font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.font-family-poppins {
   font-family: "Poppins", sans-serif !important;
     font-weight: 400 !important;
 }

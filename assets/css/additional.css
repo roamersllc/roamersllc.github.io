@@ -253,7 +253,7 @@ body {
 }
 
 a {
-  color: #141414 !important;
+  color: #141414;
   -webkit-transition: linear 0.1s !important;
   transition: linear 0.1s !important;
 }
@@ -294,12 +294,12 @@ a {
 
 .fullscreen-toggle-btn .lines {
   width: 20px !important;
-  background: #006341 !important;
+  background: #646464 !important;
 }
 
 .fullscreen-toggle-btn .lines:before, .fullscreen-toggle-btn .lines:after {
   width: 20px !important;
-  background: #006341 !important;
+  background: #646464 !important;
 }
 
 .bg-light-green {
@@ -322,9 +322,22 @@ a {
   color: #004d21 !important;
 }
 
+.black-text {
+  color: #000 !important;
+}
+
+.grey-text {
+  color: #646464 !important;
+}
+
 .green-text {
   color: #009C3C !important;
 }
+
+.purple-text {
+  color: #540D6E !important;
+}
+
 .align-center {
   text-align: center !important;
 }

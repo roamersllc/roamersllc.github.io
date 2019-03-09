@@ -7,6 +7,9 @@
   line-height: px;
 }
 
+.filter {
+  margin-bottom: 0px !important;
+}
 
 .border-orange {
 border-style: solid;
@@ -53,14 +56,14 @@ border-width: 10px;
 
 @media (min-width: 992px) {
 .block-square {
-    height: 254px !important;
+    height: 264px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-square {
-    height: 239px !important;
+    height: 219.5px !important;
     width: 100% !important;
   }
   }

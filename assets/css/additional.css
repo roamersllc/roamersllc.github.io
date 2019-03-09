@@ -7,6 +7,31 @@
   line-height: px;
 }
 
+
+.border-orange {
+border-style: solid;
+border-color: #DB9D47;
+border-width: 10px;
+  }
+
+  .border-purple {
+  border-style: solid;
+  border-color: #540D6E;
+  border-width: 10px;
+    }
+
+    .border-green {
+    border-style: solid;
+    border-color: #004d21;
+    border-width: 10px;
+      }
+
+      .border-pink {
+      border-style: solid;
+      border-color: #D0BDD7;
+      border-width: 10px;
+        }
+
 .button-purple, a.button-purple {
   background: #540D6E;
   border-color: #540D6E;
@@ -22,20 +47,20 @@
 }
 
 .block-square {
-    height: 200px !important;
+    height: 250px !important;
     width: 100% !important;
   }
 
 @media (min-width: 992px) {
 .block-square {
-    height: 230px !important;
+    height: 254px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-square {
-    height: 200px !important;
+    height: 239px !important;
     width: 100% !important;
   }
   }
@@ -85,7 +110,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    opacity: .8;
+    opacity: 0.8;
     color: #fff;
     height: 600px;
     padding-top: 0px;
@@ -107,7 +132,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    opacity: .8;
+    opacity: 1.0;
     color: #000;
     height: 500px;
     padding-top: 0px;
@@ -118,7 +143,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    opacity: .8;
+    opacity: 1.0;
     color: #fff;
     height: 500px;
     padding-top: 0px;

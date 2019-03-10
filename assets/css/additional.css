@@ -2,6 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+.flex-wrapper {
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
 .font-size-14 {
   font-size: 14px;
   line-height: px;

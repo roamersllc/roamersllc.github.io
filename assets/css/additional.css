@@ -181,6 +181,17 @@ border-width: 10px;
     padding-top: 0px;
 }
 
+.bg-overlay-products-superfood-mix {
+    background: url("../images/products/product-superfood-mix.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1.0;
+    color: #fff;
+    height: 500px;
+    padding-top: 0px;
+}
+
 div.box {
     position: relative;
 }

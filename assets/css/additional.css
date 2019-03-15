@@ -2,6 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+.filter ul li {
+  font: 400 13px "Poppins", sans-serif !important;
+}
+
+.filter ul li:hover {
+  background: #fff !important;
+}
+
+.filter ul li.active {
+  background: #009C3C !important;
+}
+
 .flex-wrapper {
   display: flex !important;
   min-height: 100vh !important;
@@ -77,8 +89,8 @@ border-width: 10px;
 
 @media (min-width: 992px) {
 .larger-text {
-  font-size: 24px !important;
-  line-height: 40px !important;
+  font-size: 36px !important;
+  line-height: 54px !important;
 }
 }
 
@@ -395,7 +407,7 @@ a {
 }
 
 .grey-text {
-  color: #646464 !important;
+  color: #141414 !important;
 }
 
 .green-text {

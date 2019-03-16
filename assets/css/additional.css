@@ -150,7 +150,7 @@ border-width: 10px;
 }
 
 .bg-overlay-superfood-mix {
-    background: linear-gradient(rgba(74,45,65,.5), rgba(74,45,65,.5)), url("../imges/photographs/superfood-mix-bw-light.png");
+    background: linear-gradient(rgba(74,45,65,.5), rgba(74,45,65,.5)), url("../images/photographs/superfood-mix-bw-light.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -415,7 +415,7 @@ a {
 }
 
 .purple-text {
-  color: #4a2d41 !important;
+  color: #643A71 !important;
 }
 
 .align-center {

@@ -150,7 +150,7 @@ border-width: 10px;
 }
 
 .bg-overlay-superfood-mix {
-    background: linear-gradient(rgba(0,156,34,.4), rgba(0,156,34,.4)), url("../images/photographs/superfood-mix-bw.png");
+    background: linear-gradient(rgba(0,156,34,1), rgba(0,156,34,1)), url("../images/photographs/superfood-mix-bw. png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -161,7 +161,7 @@ border-width: 10px;
 }
 
 .bg-overlay-recipes {
-    background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/recipes/roamers-recipes-sunday-smoothie-bw.jpg");
+    background: linear-gradient(rgba(100,58,113,1), rgba(100,58,113,1)), url("../images/recipes/roamers-recipes-sunday-smoothie-bw. jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

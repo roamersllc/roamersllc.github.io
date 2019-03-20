@@ -380,12 +380,12 @@ a {
 
 .fullscreen-toggle-btn .lines {
   width: 20px !important;
-  background: #646464 !important;
+  background: #000 !important;
 }
 
 .fullscreen-toggle-btn .lines:before, .fullscreen-toggle-btn .lines:after {
   width: 20px !important;
-  background: #646464 !important;
+  background: #000 !important;
 }
 
 .bg-light-green {

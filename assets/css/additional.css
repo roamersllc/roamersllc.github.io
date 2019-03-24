@@ -4,14 +4,22 @@
 
 .filter ul li {
   font: 400 13px "Poppins", sans-serif !important;
+    background: #fff !important;
 }
 
 .filter ul li:hover {
-  background: #fff !important;
+  background: #009C3C !important;
+  color: #fff !important;
 }
 
 .filter ul li.active {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.filter ul li.active:hover {
   background: #009C3C !important;
+  color: #fff !important;
 }
 
 .flex-wrapper {
@@ -31,7 +39,13 @@
 
 @media (min-width: 0px) {
 .image {
-    min-height: 375px !important;
+    min-height: 425px !important;
+}
+}
+
+@media (min-width: 390px) {
+  .image {
+      min-height: 375px !important;
 }
 }
 
@@ -41,9 +55,9 @@
 }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .image {
-      min-height: 275px !important;
+      min-height: 300px !important;
 }
 }
 
@@ -122,7 +136,7 @@ border-width: 10px;
 
   .underline {
     box-shadow:
-    inset 0 -0.15em black
+    inset 0 -0.15em black,
     inset 0 -0.4em white;
   }
 

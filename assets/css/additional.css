@@ -137,13 +137,7 @@ border-width: 10px;
   .underline {
     box-shadow:
     inset 0 -0.15em black,
-    inset 0 -0.4em white;
-  }
-
-  .underline-grey {
-    box-shadow:
-    inset 0 -0.15em black,
-    inset 0 -0.4em #f0f0f0;
+    inset 0 -0.4em rgba(0, 0, 0, 0);
   }
 
 @media (min-width: 992px) {

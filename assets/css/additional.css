@@ -4,7 +4,7 @@
 
 .filter ul li {
   font: 400 13px "Poppins", sans-serif !important;
-    background: #fff !important;
+    background: #f0f0f0 !important;
 }
 
 .filter ul li:hover {
@@ -13,8 +13,8 @@
 }
 
 .filter ul li.active {
-  background: #000 !important;
-  color: #fff !important;
+  background: #fff !important;
+  color: #000 !important;
 }
 
 .filter ul li.active:hover {
@@ -33,35 +33,75 @@
       left: 50%;
       transform: translateX(-50%);
       position: fixed !important;
+      padding: 0px;
+}
+
+.fixed-wide {
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      position: fixed !important;
+      padding-left: 30px;
+      padding-right: 30px;
 }
 
 @media (min-width: 0px) {
-.image {
+.title-section {
     min-height: 425px !important;
 }
 }
 
 @media (min-width: 390px) {
-  .image {
+  .title-section {
       min-height: 375px !important;
 }
 }
 
 @media (min-width: 576px) {
-  .image {
+  .title-section {
       min-height: 325px !important;
 }
 }
 
 @media (min-width: 768px) {
-  .image {
+  .title-section {
       min-height: 300px !important;
 }
 }
 
 @media (min-width: 1200px) {
-.image {
+.title-section {
     min-height: 275px !important;
+  }
+  }
+
+@media (min-width: 0px) {
+.title-section-recipes {
+    min-height: 450px !important;
+}
+}
+
+@media (min-width: 390px) {
+  .title-section-recipes {
+      min-height: 400px !important;
+}
+}
+
+@media (min-width: 576px) {
+  .title-section-recipes {
+      min-height: 350px !important;
+}
+}
+
+@media (min-width: 768px) {
+  .title-section-recipes {
+      min-height: 325px !important;
+}
+}
+
+@media (min-width: 1200px) {
+.title-section-recipes {
+    min-height: 300px !important;
   }
   }
 

@@ -105,6 +105,36 @@
   }
   }
 
+@media (min-width: 0px) {
+.title-section-learn {
+    min-height: 550px !important;
+}
+}
+
+@media (min-width: 200px) {
+  .title-section-learn {
+      min-height: 480px !important;
+}
+}
+
+@media (min-width: 576px) {
+  .title-section-learn {
+      min-height: 375px !important;
+}
+}
+
+@media (min-width: 768px) {
+  .title-section-learn {
+      min-height: 325px !important;
+}
+}
+
+@media (min-width: 1200px) {
+.title-section-learn {
+    min-height: 300px !important;
+  }
+  }
+
 
 .font-size-14 {
   font-size: 14px;

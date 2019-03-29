@@ -8,8 +8,8 @@
 }
 
 .filter ul li:hover {
-  background: #009C3C !important;
-  color: #fff !important;
+  background: #f0f0f0 !important;
+  color: #000 !important;
 }
 
 .filter ul li.active {
@@ -18,8 +18,8 @@
 }
 
 .filter ul li.active:hover {
-  background: #009C3C !important;
-  color: #fff !important;
+  background: #fff !important;
+  color: #f0f0f0 !important;
 }
 
 .flex-wrapper {
@@ -77,19 +77,19 @@
 
 @media (min-width: 0px) {
 .title-section-recipes {
-    min-height: 450px !important;
+    min-height: 500px !important;
 }
 }
 
 @media (min-width: 390px) {
   .title-section-recipes {
-      min-height: 400px !important;
+      min-height: 425px !important;
 }
 }
 
 @media (min-width: 576px) {
   .title-section-recipes {
-      min-height: 350px !important;
+      min-height: 375px !important;
 }
 }
 

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:100,200,300,400,500,600,700,800,900");
 
 .filter ul li {
   font: 400 13px "Poppins", sans-serif !important;
@@ -27,6 +28,12 @@
   min-height: 100vh !important;
   flex-direction: column !important;
   justify-content: space-between !important;
+}
+
+.fixed-image {
+      position: fixed !important;
+      padding-top: 0px;
+      top: 30px;
 }
 
 .fixed {
@@ -396,6 +403,18 @@ a.divLink {
   height: 100px !important;
 }
 
+.navbar-button-thick:hover {
+    box-shadow:
+    inset 0 -0.15em black,
+    inset 0 -0.4em rgba(0, 0, 0, 0);
+}
+
+.navbar-button:hover {
+    box-shadow:
+    inset 0 -0.05em black,
+    inset 0 -0.4em rgba(0, 0, 0, 0);
+}
+
 .navbar .nav .nav-item .nav-link {
   font: 400 14px "Poppins", sans-serif !important;
 }
@@ -538,6 +557,10 @@ a {
 }
 
 .green-text {
+  color: #03ce6a !important;
+}
+
+.green-text {
   color: #009C3C !important;
 }
 
@@ -570,7 +593,8 @@ a {
 }
 
 .font-family-fredoka-one {
-  font-family: "Fredoka One", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
 }
 
 .font-family-roboto {
@@ -588,7 +612,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 38px !important;
+  font-size: 35px !important;
 }
 
 p {

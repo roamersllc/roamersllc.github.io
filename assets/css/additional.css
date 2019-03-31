@@ -18,10 +18,6 @@
     height: 100%;
 }
 
-iframe {
-    max-width: 100%;
-}
-
 .filter ul li {
   font: 400 13px "Poppins", sans-serif !important;
     background: #f0f0f0 !important;

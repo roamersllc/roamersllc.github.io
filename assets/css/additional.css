@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:100,200,300,400,500,600,700,800,900");
 
 .filter ul li {
   font: 400 13px "Poppins", sans-serif !important;
@@ -284,7 +283,7 @@ border-width: 10px;
 }
 
 .bg-overlay-superfood-mix {
-    background: linear-gradient(rgba(0,156,34,.35), rgba(0,156,34,.35)), url("../images/photographs/superfood-mix-bw.png");
+    background: linear-gradient(rgba(3,206,106,.35), rgba(3,206,106,.35)), url("../images/photographs/superfood-mix-bw.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -557,11 +556,11 @@ a {
 }
 
 .green-text {
-  color: #03ce6a !important;
+  color: #009C3C !important;
 }
 
 .green-text {
-  color: #009C3C !important;
+  color: #03ce6a !important;
 }
 
 .purple-text {

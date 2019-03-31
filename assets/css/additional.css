@@ -2,11 +2,19 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+.iframe-container {
+    position: relative;
+    padding-bottom: calc(100% - 30px);
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+}
+
 .iframe-container iframe {
    border: 0;
    height: 100%;
    left: 0;
-   position: inherit;
+   position: auto;
    top: 0;
    width: 100%;
 }

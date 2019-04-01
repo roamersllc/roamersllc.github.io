@@ -645,7 +645,7 @@ a {
 }
 
 .dark-green-text {
-  color: #004d21 !important;
+  color: #0B6E4F !important;
 }
 
 .black-text {
@@ -657,7 +657,7 @@ a {
 }
 
 .green-text {
-  color: #0B6E4F !important;
+  color: #08A045 !important;
 }
 
 .purple-text {
@@ -690,7 +690,7 @@ a {
 
 .font-family-fredoka-one {
   font-family: "Montserrat", sans-serif !important;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
 }
 
 .font-family-roboto {
@@ -708,7 +708,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 35px !important;
+  font-size: 36.8px !important;
 }
 
 p {

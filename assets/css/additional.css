@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
 .filter ul li {
   font: 400 13px "Poppins", sans-serif !important;
@@ -9,7 +10,7 @@
 
 .filter ul li:hover {
   background: #f0f0f0 !important;
-  color: #000 !important;
+  color: #000 !important;f
 }
 
 .filter ul li.active {
@@ -656,11 +657,7 @@ a {
 }
 
 .green-text {
-  color: #009C3C !important;
-}
-
-.green-text {
-  color: #03ce6a !important;
+  color: #0B6E4F !important;
 }
 
 .purple-text {
@@ -692,8 +689,8 @@ a {
 }
 
 .font-family-fredoka-one {
-  font-family: "Poppins", sans-serif !important;
-    font-weight: 600 !important;
+  font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important;
 }
 
 .font-family-roboto {

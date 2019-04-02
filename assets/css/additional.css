@@ -620,12 +620,12 @@ a {
 
 .fullscreen-toggle-btn .lines {
   width: 20px !important;
-  background: #000 !important;
+  background: #0B6E4F !important;
 }
 
 .fullscreen-toggle-btn .lines:before, .fullscreen-toggle-btn .lines:after {
   width: 20px !important;
-  background: #000 !important;
+  background: #0B6E4F !important;
 }
 
 .bg-light-green {

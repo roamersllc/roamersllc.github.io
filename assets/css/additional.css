@@ -54,31 +54,31 @@
 
 @media (min-width: 0px) {
 .title-section {
-    min-height: 425px !important;
+    min-height: 375px !important;
 }
 }
 
 @media (min-width: 390px) {
   .title-section {
-      min-height: 375px !important;
+      min-height: 325px !important;
 }
 }
 
 @media (min-width: 576px) {
   .title-section {
-      min-height: 325px !important;
+      min-height: 275px !important;
 }
 }
 
 @media (min-width: 768px) {
   .title-section {
-      min-height: 300px !important;
+      min-height: 225px !important;
 }
 }
 
 @media (min-width: 1200px) {
 .title-section {
-    min-height: 275px !important;
+    min-height: 200px !important;
   }
   }
 

@@ -54,43 +54,33 @@
 
 @media (min-width: 0px) {
 .title-section {
-    min-height: 300px !important;
+    min-height: 375px !important;
 }
 }
 
 @media (min-width: 390px) {
   .title-section {
-      min-height: 275px !important;
+      min-height: 325px !important;
 }
 }
 
 @media (min-width: 576px) {
   .title-section {
-      min-height: 225px !important;
+      min-height: 275px !important;
 }
 }
 
 @media (min-width: 768px) {
   .title-section {
-      min-height: 150px !important;
+      min-height: 225px !important;
 }
 }
 
 @media (min-width: 1200px) {
 .title-section {
-    min-height: 150px !important;
+    min-height: 225px !important;
   }
   }
-
-  .title-section {
-        width: 100vw !important;
-        padding-bottom: calc(920px - 110%);
-  }
-
-
-
-
-
 
 @media (min-width: 0px) {
 .title-section-recipes {

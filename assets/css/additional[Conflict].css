@@ -82,6 +82,11 @@
   }
   }
 
+  .title-section {
+        width: 100vw !important;
+        padding-bottom: calc(920px - 110%);
+  }
+
 @media (min-width: 0px) {
 .title-section-recipes {
     min-height: 500px !important;

@@ -159,9 +159,25 @@
 }
 
 
+.font-size-largest {
+  font-size: 28px;
+  line-height: px;
+}
+
+
+.font-size-large {
+  font-size: 18px;
+  line-height: px;
+}
+
+
 .font-size-larger {
   font-size: 24px;
   line-height: px;
+}
+
+.line-height-larger {
+  line-height: 40px !important;
 }
 
 .filter {
@@ -206,8 +222,24 @@ border-width: 10px;
   padding: 10px;
 }
 
+.align-centre-div {
+
+ height: 100%;
+ width: 100%;
+ display: table;
+ text-align: center;
+
+}
+
+.align-centre-content {
+
+display: table-cell;
+vertical-align: middle;
+
+}
+
 .block-insta {
-    height: auto !important;
+    height: 100% !important;
     width: 100% !important;
   }
 
@@ -220,7 +252,6 @@ border-width: 10px;
 
 @media (min-width: 1200px) {
 .block-insta {
-  padding-top: 110px !important;
     height: 347px !important;
     width: 100% !important;
   }

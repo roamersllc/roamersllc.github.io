@@ -177,7 +177,7 @@
 }
 
 .line-height-larger {
-  line-height: 36px !important;
+  line-height: 32px !important;
 }
 
 .filter {
@@ -267,14 +267,14 @@ vertical-align: middle;
 
 @media (min-width: 992px) {
 .block-square {
-    height: 180px !important;
+    height: 195px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-square {
-    height: 165px !important;
+    height: 180px !important;
     width: 100% !important;
   }
   }
@@ -356,7 +356,7 @@ vertical-align: middle;
 }
 
 .bg-overlay-superfood-mix {
-    background: linear-gradient(rgba(3,206,106,.35), rgba(3,206,106,.35)), url("../images/photographs/superfood-mix-bw.png");
+    background: linear-gradient(rgba(8,160,69,.35), rgba(8,160,69,.35)), url("../images/photographs/superfood-mix-bw.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -364,6 +364,17 @@ vertical-align: middle;
     color: #fff;
     height: 500px;
     padding-top: 0px;
+}
+
+.bg-overlay-superseed-mix {
+background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+opacity: 1;
+color: #fff;
+height: 500px;
+padding-top: 0px;
 }
 
 .bg-overlay-recipes {

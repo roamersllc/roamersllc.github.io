@@ -3,6 +3,14 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+#HASH {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: left !important;
+}
+
 .filter ul li {
   font: 400 13px "Poppins", sans-serif !important;
     background: #f0f0f0 !important;

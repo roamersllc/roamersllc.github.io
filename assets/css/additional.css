@@ -8,7 +8,6 @@
   align-items: baseline;
   justify-content: space-between;
   flex-direction: row;
-  text-align: left !important;
 }
 
 .filter ul li {

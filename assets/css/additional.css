@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
-
 @media (min-width: 576px) {
   .ingredient-padding {
       padding-left: 0px !important;
@@ -15,7 +14,6 @@
       padding-left: 30px !important;
 }
 }
-
 
 .collapsible {
   background-color: #fff;

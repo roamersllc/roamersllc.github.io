@@ -3,6 +3,17 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+.categorypill {
+border:1px;
+border-radius: 200px;
+border-style:solid;
+border-color:#fff;
+padding: 0px;
+padding-left: 13px;
+padding-right: 13px;
+background-color: #fff;
+}
+
 @media (min-width: 576px) {
   .ingredient-padding {
       padding-left: 0px !important;

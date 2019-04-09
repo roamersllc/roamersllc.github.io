@@ -25,7 +25,7 @@
   color: black;
   font-weight: bold;
     float: right !important;
-    transform: translate(100%,-105%);
+    transform: translate(100%,-120%);
 }
 
 .actives:after {
@@ -37,7 +37,12 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #ffffff;
+    background-color: #f0f0f0;
+    border: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #HASH {

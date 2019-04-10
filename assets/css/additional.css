@@ -3,6 +3,87 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+.paypalcards {
+  width: 300px;
+  align: center;
+}
+
+@media (min-width: 0px) {
+.paypalbutton1 {
+      height:0px !important;
+      border-width: 0px !important;
+      visibility: hidden;
+      position: fixed;
+  }
+}
+
+@media (min-width: 390px) {
+.paypalbutton1 {
+      width: 150px !important;
+      height:auto !important;
+      border-width: 0px !important;
+            position: relative !important;
+            float: right !important;
+            right: 10px;
+            visibility: visible;
+            transform: translateY(32%);
+  }
+}
+
+@media (min-width: 996px) {
+.paypalbutton1 {
+      width: 150px !important;
+      height:auto !important;
+      border-width: 0px !important;
+            position: relative !important;
+            float: right !important;
+            right: -10px;
+            visibility: visible;
+            transform: translateY(32%);
+  }
+}
+
+@media (min-width: 1200px) {
+.paypalbutton1 {
+      width: 150px !important;
+      height:auto !important;
+      border-width: 0px !important;
+            position: relative !important;
+            float: right !important;
+            right: 10px;
+            visibility: visible;
+            transform: translateY(32%);
+  }
+}
+
+@media (min-width: 0px) {
+.paypalbutton2 {
+    width: 100% !important;
+    height:auto !important;
+    border-width: 0px !important;
+          visibility: visible;
+}
+}
+
+@media (min-width: 390px) {
+.paypalbutton2 {
+    height:0px !important;
+    border-width: 0px !important;
+    visibility: hidden;
+    position: fixed;
+}
+}
+
+table {
+  transform: translateX(0%);
+}
+
+.dropdown-padding {
+padding-left: 30px;
+padding-right: 30px;
+height: 100%;
+}
+
 .categorypill {
 border:1px;
 border-radius: 200px;
@@ -152,11 +233,6 @@ background-color: #fff;
 .title-section {
     min-height: 225px !important;
   }
-  }
-
-  .title-section {
-        width: 100vw !important;
-        padding-bottom: calc(920px - 1/200%);
   }
 
 

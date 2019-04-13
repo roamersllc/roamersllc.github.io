@@ -24,7 +24,7 @@
 
 @media (min-width: 390px) {
 .paypalbutton1 {
-      width: 150px !important;
+      width: 180px !important;
       height:auto !important;
       border-width: 0px !important;
             position: relative !important;
@@ -90,7 +90,7 @@ height: 100%;
 }
 
 .categorypill {
-border:1px;
+border:3px;
 border-radius: 200px;
 border-style:solid;
 border-color:#fff;

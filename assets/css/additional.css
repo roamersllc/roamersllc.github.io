@@ -22,7 +22,7 @@
   }
 }
 
-@media (min-width: 390px) {
+@media (min-width: 410px) {
 .paypalbutton1 {
       width: 180px !important;
       height:auto !important;
@@ -31,33 +31,33 @@
             float: right !important;
             right: 10px;
             visibility: visible;
-            transform: translateY(32%);
+            transform: translateY(18%);
   }
 }
 
 @media (min-width: 996px) {
 .paypalbutton1 {
-      width: 150px !important;
+      width: 180px !important;
       height:auto !important;
       border-width: 0px !important;
             position: relative !important;
             float: right !important;
             right: -10px;
             visibility: visible;
-            transform: translateY(32%);
+            transform: translateY(18%);
   }
 }
 
 @media (min-width: 1200px) {
 .paypalbutton1 {
-      width: 150px !important;
+      width: 180px !important;
       height:auto !important;
       border-width: 0px !important;
             position: relative !important;
             float: right !important;
             right: 10px;
             visibility: visible;
-            transform: translateY(32%);
+            transform: translateY(18%);
   }
 }
 
@@ -70,7 +70,7 @@
 }
 }
 
-@media (min-width: 390px) {
+@media (min-width: 410px) {
 .paypalbutton2 {
     height:0px !important;
     border-width: 0px !important;

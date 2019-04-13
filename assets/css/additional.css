@@ -8,6 +8,11 @@
   align: center;
 }
 
+.menulogo {
+  width: 240px;
+  align: center;
+}
+
 @media (min-width: 0px) {
 .paypalbutton1 {
       height:0px !important;

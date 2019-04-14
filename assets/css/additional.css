@@ -3,6 +3,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+.overlay {
+    position: absolute;
+    z-index:100;
+    transform: translateY(-215.5%) translateX(5%) rotate(-10deg);
+}
+
 .paypalcards {
   width: 300px;
   align: center;
@@ -22,7 +28,7 @@
   }
 }
 
-@media (min-width: 410px) {
+@media (min-width: 420px) {
 .paypalbutton1 {
       width: 180px !important;
       height:auto !important;
@@ -31,7 +37,7 @@
             float: right !important;
             right: 10px;
             visibility: visible;
-            transform: translateY(18%);
+            transform: translateY(55%);
   }
 }
 
@@ -44,7 +50,7 @@
             float: right !important;
             right: -10px;
             visibility: visible;
-            transform: translateY(18%);
+            transform: translateY(55%);
   }
 }
 
@@ -57,7 +63,7 @@
             float: right !important;
             right: 10px;
             visibility: visible;
-            transform: translateY(18%);
+            transform: translateY(55%);
   }
 }
 
@@ -70,7 +76,7 @@
 }
 }
 
-@media (min-width: 410px) {
+@media (min-width: 420px) {
 .paypalbutton2 {
     height:0px !important;
     border-width: 0px !important;
@@ -89,7 +95,7 @@ padding-right: 30px;
 height: 100%;
 }
 
-.categorypill {
+.pricepill {
 border:3px;
 border-radius: 200px;
 border-style:solid;
@@ -98,6 +104,16 @@ padding: 0px;
 padding-left: 13px;
 padding-right: 13px;
 background-color: #fff;
+}
+
+.categorypill {
+border:0.15em;
+border-radius: 200px;
+border-style:solid;
+border-color:#000;
+padding: 0px;
+padding-left: 13px;
+padding-right: 13px;
 }
 
 @media (min-width: 576px) {
@@ -333,6 +349,14 @@ background-color: #fff;
   line-height: 32px !important;
 }
 
+.line-height-larger {
+  line-height: 32px !important;
+}
+
+.line-height-smaller {
+  line-height: 2px !important;
+}
+
 .filter {
   margin-bottom: 0px !important;
 }
@@ -531,33 +555,11 @@ padding-top: 0px;
 }
 
 .bg-overlay-recipes {
-    background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/recipes/roamers-recipes-sunday-smoothie-bw.jpg");
+    background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-recipes-sunday-smoothie-bw.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     opacity: 1;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
-.bg-overlay-recipes-easy-tacos {
-    background: url("../images/recipes/roamers-recipes-easy-tacos.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
-.bg-overlay-recipes-sunday-smoothie {
-    background: url("../images/recipes/roamers-recipes-sunday-smoothie.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
     color: #fff;
     height: 500px;
     padding-top: 0px;
@@ -842,7 +844,11 @@ a {
 }
 
 .light-grey-text {
-  color: #f0f0f0;
+  color: #dcdcdc !important;
+}
+
+.red-text {
+  color: #e50000 !important;
 }
 
 .bg-orange {

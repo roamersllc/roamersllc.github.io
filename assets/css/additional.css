@@ -28,16 +28,16 @@
   }
 }
 
-@media (min-width: 420px) {
+@media (min-width: 450px) {
 .paypalbutton1 {
       width: 180px !important;
       height:auto !important;
       border-width: 0px !important;
             position: relative !important;
             float: right !important;
-            right: 10px;
+            right: -30px;
             visibility: visible;
-            transform: translateY(55%);
+            transform: translateY(-105%);
   }
 }
 
@@ -48,9 +48,9 @@
       border-width: 0px !important;
             position: relative !important;
             float: right !important;
-            right: -10px;
+            right: -30px;
             visibility: visible;
-            transform: translateY(55%);
+            transform: translateY(-105%);
   }
 }
 
@@ -61,9 +61,9 @@
       border-width: 0px !important;
             position: relative !important;
             float: right !important;
-            right: 10px;
+            right: -30px;
             visibility: visible;
-            transform: translateY(55%);
+            transform: translateY(-105%);
   }
 }
 
@@ -76,7 +76,7 @@
 }
 }
 
-@media (min-width: 420px) {
+@media (min-width: 450px) {
 .paypalbutton2 {
     height:0px !important;
     border-width: 0px !important;

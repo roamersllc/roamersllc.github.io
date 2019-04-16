@@ -446,14 +446,14 @@ vertical-align: middle;
 
 @media (min-width: 992px) {
 .block-square {
-    height: 195px !important;
+    height: 225px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-square {
-    height: 180px !important;
+    height: 195px !important;
     width: 100% !important;
   }
   }

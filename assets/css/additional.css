@@ -585,6 +585,18 @@ padding-top: 0px;
     padding-top: 0px;
 }
 
+.bg-overlay-recipes:hover {
+
+      cursor: hand !important;
+
+}
+
+.bg-overlay-superfood-mix:hover {
+
+      cursor: hand !important;
+
+}
+
 .bg-overlay-roamers-header {
     background: url("../images/photographs/roamers-mountain-2.png");
     background-repeat: no-repeat;
@@ -611,8 +623,7 @@ div.box {
 }
 
 div.box:hover {
-    cursor: hand;
-    cursor: pointer;
+    cursor: hand !important;
     opacity: .6;
       font-size: 90px !important;
 }

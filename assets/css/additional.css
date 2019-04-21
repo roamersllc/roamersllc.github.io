@@ -437,6 +437,24 @@ vertical-align: middle;
   }
 
 
+  .block-run {
+      height: 250px !important;
+      width: 100% !important;
+    }
+
+  @media (min-width: 992px) {
+  .block-run {
+      height: 287px !important;
+      width: 100% !important;
+    }
+    }
+
+  @media (min-width: 1200px) {
+  .block-run {
+      height: 347px !important;
+      width: 100% !important;
+    }
+    }
 
 
 .block-square {
@@ -567,84 +585,15 @@ padding-top: 0px;
     padding-top: 0px;
 }
 
-.bg-overlay-products-superfood-mix {
-    background: url("../images/products/product-superfood-mix.png");
+.bg-overlay-roamers-run {
+    background: url("../images/photographs/roamers-market-peaches.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     opacity: 1.0;
     color: #fff;
-    height: 500px;
     padding-top: 0px;
 }
-
-.bg-overlay-products-superfood-mix-flax {
-    background: url("../images/products/flax/roamers-flax-product-01@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
-.bg-overlay-products-superfood-mix-chia {
-    background: url("../images/products/chia/roamers-chia-seeds-product-01@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
-.bg-overlay-products-superfood-mix-hemp {
-    background: url("../images/products/hemp/roamers-hemp-product-01@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
-.bg-overlay-products-superfood-mix-sunflower {
-    background: url("../images/products/sunflower/roamers-sunflower-product-01@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
-.bg-overlay-products-superfood-mix-pbp {
-    background: url("../images/products/pbp/roamers-pbp-product-01@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
-.bg-overlay-products-superfood-mix-oat {
-    background: url("../images/products/oat/roamers-oat-product-01@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
-
 
 
 div.box {

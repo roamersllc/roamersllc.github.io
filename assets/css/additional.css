@@ -3,6 +3,22 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+.col-spacing-15 {
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+  margin-left: -7.5px;
+}
+
+.col-spacing-15 div[class^="col-"]:not(.row) {
+  margin-bottom: 15px;
+  padding: 0 7.5px;
+}
+
+.container, .container-fluid {
+  position: relative;
+  padding: 0 15px !important;
+}
+
 .overlay {
     position: absolute;
     z-index:100;
@@ -424,14 +440,14 @@ vertical-align: middle;
 
 @media (min-width: 992px) {
 .block-insta {
-    height: 287px !important;
+    height: 299px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-insta {
-    height: 347px !important;
+    height: 360px !important;
     width: 100% !important;
   }
   }
@@ -464,14 +480,14 @@ vertical-align: middle;
 
 @media (min-width: 992px) {
 .block-square {
-    height: 195px !important;
+    height: 202px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-square {
-    height: 180px !important;
+    height: 187px !important;
     width: 100% !important;
   }
   }

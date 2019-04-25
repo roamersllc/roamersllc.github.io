@@ -546,28 +546,6 @@ vertical-align: middle;
   width: 80px !important;
 }
 
-.bg-overlay-footer {
-    background: url("../images/photographs/roamers-plant-powered-people.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1;
-    color: #fff;
-    height: 600px;
-    padding-top: 0px;
-}
-
-.bg-overlay-header {
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/photographs/roamers-banana-blueberry-superfood-mix-spinach-long.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1.0;
-    color: #fff;
-    height: 600px;
-    padding-top: 0px;
-}
-
 .bg-overlay-superseed-mix {
 background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw.png");
 background-repeat: no-repeat;
@@ -579,20 +557,8 @@ height: 500px;
 padding-top: 0px;
 }
 
-.bg-overlay-recipes:hover {
-
-      cursor: hand !important;
-
-}
-
-.bg-overlay-superfood-mix:hover {
-
-      cursor: hand !important;
-
-}
-
 .bg-overlay-roamers-header {
-    background: url("../images/photographs/roamers-yosemite.jpg");
+    background: linear-gradient(rgba(219,157,71,.35), rgba(219,157,71,.35)), url("../images/photographs/roamers-beets.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -602,7 +568,7 @@ padding-top: 0px;
 }
 
 .bg-overlay-roamers-footer {
-    background: url("../images/photographs/roamers-beets.png");
+    background: linear-gradient(rgba(219,157,71,.35), rgba(219,157,71,.35)), url("../images/photographs/roamers-beets.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -623,7 +589,7 @@ div.box:hover {
 }
 
 div.box-superfood {
-      background: linear-gradient(rgba(8,160,69,.35), rgba(8,160,69,.35)), url("../images/photographs/superfood-mix-bw.png");
+      background: linear-gradient(rgba(8,160,69,.35), rgba(8,160,69,.35)), url("../images/photographs/superfood-mix-sketch.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;

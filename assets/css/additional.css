@@ -568,17 +568,6 @@ vertical-align: middle;
     padding-top: 0px;
 }
 
-.bg-overlay-superfood-mix {
-    background: linear-gradient(rgba(8,160,69,.35), rgba(8,160,69,.35)), url("../images/photographs/superfood-mix-bw.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
-}
-
 .bg-overlay-superseed-mix {
 background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw.png");
 background-repeat: no-repeat;
@@ -588,17 +577,6 @@ opacity: 1;
 color: #fff;
 height: 500px;
 padding-top: 0px;
-}
-
-.bg-overlay-recipes {
-    background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-recipes-sunday-smoothie-bw.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 1;
-    color: #fff;
-    height: 500px;
-    padding-top: 0px;
 }
 
 .bg-overlay-recipes:hover {
@@ -645,12 +623,19 @@ div.box:hover {
 }
 
 div.box-superfood {
+      background: linear-gradient(rgba(8,160,69,.35), rgba(8,160,69,.35)), url("../images/photographs/superfood-mix-bw.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      opacity: 1;
+      color: #fff;
+      height: 500px;
+      padding-top: 0px;
     position: relative;
 }
 
 div.box-superfood:hover {
     cursor: hand !important;
-    opacity: .6;
       font-size: 90px !important;
       background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.0)), url("../images/photographs/superfood-mix.png");
       background-repeat: no-repeat;
@@ -663,6 +648,14 @@ div.box-superfood:hover {
 }
 
 div.box-recipes {
+      background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-recipes-sunday-smoothie-bw.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      opacity: 1;
+      color: #fff;
+      height: 500px;
+      padding-top: 0px;
     position: relative;
 }
 

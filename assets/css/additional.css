@@ -558,7 +558,7 @@ padding-top: 0px;
 }
 
 .bg-overlay-roamers-header {
-    background: linear-gradient(rgba(219,157,71,.35), rgba(219,157,71,.35)), url("../images/photographs/roamers-beets.png");
+    background: linear-gradient(rgba(219,157,71,.0), rgba(219,157,71,.0)), url("../images/photographs/beets-sketch-yellow.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -568,7 +568,7 @@ padding-top: 0px;
 }
 
 .bg-overlay-roamers-footer {
-    background: linear-gradient(rgba(219,157,71,.35), rgba(219,157,71,.35)), url("../images/photographs/roamers-beets.png");
+    background: linear-gradient(rgba(219,157,71,.0), rgba(219,157,71,.0)), url("../images/photographs/beets-sketch-yellow.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -589,7 +589,7 @@ div.box:hover {
 }
 
 div.box-superfood {
-      background: linear-gradient(rgba(8,160,69,.35), rgba(8,160,69,.35)), url("../images/photographs/superfood-mix-sketch.png");
+      background: linear-gradient(rgba(8,160,69,.0), rgba(8,160,69,.0)), url("../images/photographs/superfood-sketch-colour.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -603,7 +603,7 @@ div.box-superfood {
 div.box-superfood:hover {
     cursor: hand !important;
       font-size: 90px !important;
-      background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.0)), url("../images/photographs/superfood-mix.png");
+      background: linear-gradient(rgba(8,160,69,.0), rgba(8,160,69,.0)), url("../images/photographs/superfood-sketch-colour.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -614,7 +614,7 @@ div.box-superfood:hover {
 }
 
 div.box-recipes {
-      background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-recipes-sunday-smoothie-bw.jpg");
+      background: linear-gradient(rgba(100,58,113,.0), rgba(100,58,113,.0)), url("../images/photographs/beets-sketch-colour.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -629,7 +629,7 @@ div.box-recipes:hover {
     cursor: hand !important;
     opacity: .6;
       font-size: 90px !important;
-      background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.0)), url("../images/photographs/roamers-recipes-sunday-smoothie.jpg");
+      background: linear-gradient(rgba(100,58,113,.0), rgba(100,58,113,.0)), url("../images/photographs/beets-sketch-yellow.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;

@@ -440,14 +440,14 @@ vertical-align: middle;
 
 @media (min-width: 992px) {
 .block-insta {
-    height: 299px !important;
+    height: 216px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-insta {
-    height: 360px !important;
+    height: 216px !important;
     width: 100% !important;
   }
   }
@@ -460,14 +460,14 @@ vertical-align: middle;
 
   @media (min-width: 992px) {
   .block-run {
-      height: 287px !important;
+      height: 216px !important;
       width: 100% !important;
     }
     }
 
   @media (min-width: 1200px) {
   .block-run {
-      height: 347px !important;
+      height: 216px !important;
       width: 100% !important;
     }
     }
@@ -823,7 +823,7 @@ a {
 }
 
 .bg-light-grey {
-  background: #f0f0f0;
+  background: #e3dfdb;
 }
 
 .light-grey-text {

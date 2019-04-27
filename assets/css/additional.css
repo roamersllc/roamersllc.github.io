@@ -589,7 +589,7 @@ div.box:hover {
 }
 
 div.box-superfood {
-      background: linear-gradient(rgba(8,160,69,.0), rgba(8,160,69,.0)), url("../images/photographs/superfood-sketch-colour.png");
+      background: linear-gradient(rgba(8,160,69,.35), rgba(8,160,69,.35)), url("../images/photographs/superfood-mix-bw.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -603,7 +603,7 @@ div.box-superfood {
 div.box-superfood:hover {
     cursor: hand !important;
       font-size: 90px !important;
-      background: linear-gradient(rgba(8,160,69,.0), rgba(8,160,69,.0)), url("../images/photographs/superfood-sketch-colour.png");
+      background: linear-gradient(rgba(8,160,69,.0), rgba(8,160,69,.0)), url("../images/photographs/superfood-mix.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -613,8 +613,28 @@ div.box-superfood:hover {
       padding-top: 0px;
 }
 
+div.box-farmers {background: linear-gradient(rgba(219,157,71,.5), rgba(219,157,71,.5)), url("../images/photographs/beets-square-bw.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1.0;
+    color: #fff;
+    padding-top: 0px;
+}
+
+div.box-farmers:hover {
+    cursor: hand !important;
+      font-size: 90px !important;background: linear-gradient(rgba(219,157,71,.0), rgba(219,157,71,.0)), url("../images/photographs/beets-square.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          opacity: 1.0;
+          color: #fff;
+          padding-top: 0px;
+}
+
 div.box-recipes {
-      background: linear-gradient(rgba(100,58,113,.0), rgba(100,58,113,.0)), url("../images/photographs/beets-sketch-colour.png");
+      background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-smoothie-bw.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -629,7 +649,7 @@ div.box-recipes:hover {
     cursor: hand !important;
     opacity: .6;
       font-size: 90px !important;
-      background: linear-gradient(rgba(100,58,113,.0), rgba(100,58,113,.0)), url("../images/photographs/beets-sketch-yellow.png");
+      background: linear-gradient(rgba(100,58,113,.0), rgba(100,58,113,.0)), url("../images/photographs/roamers-smoothie.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;

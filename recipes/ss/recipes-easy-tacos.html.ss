@@ -38,14 +38,14 @@
 										<a class="nav-link black-text heading-uppercase" href="../"><x class="navbar-button">Home</x></a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link black-text heading-uppercase" href="../products/products-superfood-mix"><x class="navbar-button">Superfood Mix</x></a>
+										<a class="nav-link black-text heading-uppercase" href="../products/superfood-mix"><x class="navbar-button">Superfood Mix</x></a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link light-grey-text heading-uppercase"><x class="navbar-button-disabled">Superseed Mix</x></a>
 										<p class="red-text heading-uppercase overlay"><b>COMING SOON</b></p></a>
 									</li>
 								<!--	<li class="nav-item">
-										<a class="nav-link black-text heading-uppercase" href="products-superseed-mix"><x class="navbar-button">Superseed Mix</x></a>
+										<a class="nav-link black-text heading-uppercase" href="superseed-mix"><x class="navbar-button">Superseed Mix</x></a>
 									</li> -->
 									<li class="nav-item">
 										<a class="nav-link black-text heading-uppercase" href="../recipes"><b>Recipes</b></a>
@@ -76,11 +76,11 @@
 												<a class="font-family-poppins" href="../"><h3>home</h3></a>
 											</li>
 											<li>
-												<a class="font-family-poppins" href="../products/products-superfood-mix"><h3>superfood mix</h3></a>
+												<a class="font-family-poppins" href="../products/superfood-mix"><h3>superfood mix</h3></a>
 											</li>
 										<li>
 												<a class="font-family-poppins"><h3>superseed mix</h3></a>
-												<!--  href="../products/products-superseed-mix" -->
+												<!--  href="../products/superseed-mix" -->
 											</li>
 											<li>
 												<a class="font-family-poppins" href="../recipes"><h3>recipes</h3></a>

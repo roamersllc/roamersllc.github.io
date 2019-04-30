@@ -101,6 +101,18 @@
 }
 }
 
+@media (min-width: 0px) {
+.padding-header-footer {
+  padding-top: 15px
+}
+}
+
+@media (min-width: 768px) {
+.padding-header-footer {
+  padding-top: 30px
+}
+}
+
 table {
   transform: translateX(0%);
 }

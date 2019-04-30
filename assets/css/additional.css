@@ -192,7 +192,7 @@ color:#000;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-    background-color: #e3dfdb;
+    background-color: #dfe3db !important;
     border: 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -209,11 +209,11 @@ color:#000;
 
 .filter ul li {
   font: 400 13px "Poppins", sans-serif !important;
-    background: #f0f0f0 !important;
+    background: #dfe3db !important;
 }
 
 .filter ul li:hover {
-  background: #f0f0f0 !important;
+  background: #dfe3db !important;
   color: #000 !important;f
 }
 
@@ -224,7 +224,7 @@ color:#000;
 
 .filter ul li.active:hover {
   background: #fff !important;
-  color: #f0f0f0 !important;
+  color: #dfe3db !important;
 }
 
 .flex-wrapper {
@@ -747,7 +747,7 @@ a.divLink {
 
 @media (min-width: 992px) {.navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu,
   .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu {
-    background: #f0f0f0 !important;
+    background: #dfe3db !important;
   }
 }
 
@@ -784,7 +784,7 @@ a.divLink {
 }
 
 .navbar .nav.dropdown-grey .nav-megadropdown .mega-menu {
-  background: #f0f0f0 !important;
+  background: #dfe3db !important;
 }
 
 html, body {
@@ -855,7 +855,11 @@ a {
 }
 
 .bg-light-grey {
-  background: #e3dfdb;
+  background: #dfe3db;
+}
+
+.bg-grey {
+  background: #dfe3db !important;
 }
 
 .light-grey-text {
@@ -911,7 +915,7 @@ a {
 }
 
 .white-text-icon:hover {
-  color: #f0f0f0 !important;
+  color: #dfe3db !important;
 }
 
 .font-family-fredoka-one {

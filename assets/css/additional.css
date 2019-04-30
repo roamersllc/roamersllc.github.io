@@ -103,13 +103,25 @@
 
 @media (min-width: 0px) {
 .padding-header-footer {
-  padding-top: 15px
+  padding-top: 15px !important;
 }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
 .padding-header-footer {
-  padding-top: 30px
+  padding-top: 30px !important;
+}
+}
+
+@media (min-width: 0px) {
+.padding-header-footer-slim {
+  padding-top: 0px !important;
+}
+}
+
+@media (min-width: 576px) {
+.padding-header-footer-slim {
+  padding-top: 15px !important;
 }
 }
 

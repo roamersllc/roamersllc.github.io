@@ -1,7 +1,7 @@
 /*------------------------------------------------
 *
 * Template name: Mono
-* Version      : 4.7
+* Version      : 4.8.5
 * Author       : FlaTheme
 * Author URL   : http://themeforest.net/user/flatheme
 *
@@ -126,11 +126,11 @@
 }
 
 .bg-dark-lighter {
-  background: #1e1e1e !important;
+  background: #1b1b1b !important;
 }
 
 .bg-dark-lightest {
-  background: #282828 !important;
+  background: #222222 !important;
 }
 
 .bg-grey {
@@ -177,7 +177,7 @@
   font-family: "Heebo", sans-serif;
 }
 
-.font-family-playfair {
+.font-family-secondary, .font-family-playfair {
   font-family: "Playfair Display", serif;
 }
 
@@ -523,7 +523,7 @@ a.text-decoration-underline-overline:hover, button.text-decoration-underline-ove
   margin-bottom: 70px !important;
 }
 
-.no-margin {
+.margin-0, .no-margin {
   margin: 0 !important;
 }
 
@@ -555,16 +555,24 @@ a.text-decoration-underline-overline:hover, button.text-decoration-underline-ove
   padding: 70px !important;
 }
 
-.no-padding {
+.padding-0, .no-padding {
   padding: 0 !important;
 }
 
-.no-padding-top {
+.padding-top-0, .no-padding-top {
   padding-top: 0 !important;
 }
 
-.no-padding-bottom {
+.padding-right-0, .no-padding-right {
+  padding-right: 0 !important;
+}
+
+.padding-bottom-0, .no-padding-bottom {
   padding-bottom: 0 !important;
+}
+
+.padding-left-0, .no-padding-left {
+  padding-left: 0 !important;
 }
 
 html, body {
@@ -589,15 +597,15 @@ a:hover {
 
 button {
   background: transparent;
-  border: 0;
   box-shadow: none;
+  border: 0;
   padding: 0;
   cursor: pointer;
 }
 
 a:focus, a:active, button:focus, button:active {
-  outline: 0;
   box-shadow: none;
+  outline: 0;
 }
 
 .container, .container-fluid {
@@ -922,25 +930,24 @@ pre {
 }
 
 .accordion {
+  list-style-type: none;
   padding: 0;
 }
 
 .accordion li {
-  list-style-type: none;
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 0;
   margin: 0;
-  padding: 10px 20px;
+  padding: 14px 22px;
 }
 
 .accordion li:last-child {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .accordion li .accordion-title {
   position: relative;
   cursor: pointer;
-  padding: 5px 0;
 }
 
 .accordion li .accordion-title:before, .accordion li .accordion-title:after {
@@ -971,11 +978,47 @@ pre {
 }
 
 .accordion li .accordion-content {
-  position: relative;
   overflow: hidden;
   max-height: 0;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
+}
+
+.accordion li .accordion-content::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 6px;
+}
+
+.accordion li .accordion-content ul li, .accordion li .accordion-content ol li {
+  border: 0;
+  padding: 0;
+}
+
+.accordion li .accordion-content ul li:last-child, .accordion li .accordion-content ol li:last-child {
+  border: 0;
+}
+
+.accordion li .accordion-content ul {
+  list-style-type: disc;
+}
+
+.accordion li .accordion-content ul ul {
+  list-style-type: circle;
+}
+
+.accordion li .accordion-content ol.list-ordered li {
+  margin-bottom: 8px;
+  padding-left: 34px;
+}
+
+.accordion li .accordion-content ol.list-ordered li:last-child {
+  margin: 0;
+}
+
+.accordion li .accordion-content .nav {
+  list-style-type: none;
 }
 
 .accordion li.active .accordion-title:after {
@@ -984,13 +1027,101 @@ pre {
 }
 
 .accordion.style-2 li {
-  border: 1px solid #e6e6e6;
-  border-radius: 5px;
-  margin-bottom: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 8px;
 }
 
 .accordion.style-2 li:last-child {
   margin-bottom: 0;
+}
+
+.accordion.style-3 li {
+  border: 0;
+  margin-bottom: 14px;
+  padding: 0;
+}
+
+.accordion.style-3 li:last-child {
+  margin-bottom: 0;
+}
+
+.accordion.style-3 li .accordion-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  -webkit-transition: linear 0.1s;
+  transition: linear 0.1s;
+}
+
+.accordion.style-3 li .accordion-title::before, .accordion.style-3 li .accordion-title::after {
+  margin-top: -6px;
+}
+
+.accordion.style-3 li .accordion-content {
+  padding: 0 20px;
+}
+
+.accordion.style-3 li .accordion-content::before {
+  height: 20px;
+}
+
+.accordion.style-3 li.active .accordion-title {
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.accordion.style-4 li, .accordion.style-5 li, .accordion.style-6 li {
+  border: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.accordion.style-4 li .accordion-title, .accordion.style-5 li .accordion-title, .accordion.style-6 li .accordion-title {
+  padding: 14px 30px;
+}
+
+.accordion.style-4 li .accordion-title::before, .accordion.style-5 li .accordion-title::before, .accordion.style-6 li .accordion-title::before {
+  right: 30px;
+}
+
+.accordion.style-4 li .accordion-title::after, .accordion.style-5 li .accordion-title::after, .accordion.style-6 li .accordion-title::after {
+  right: 33px;
+}
+
+.accordion.style-4 li .accordion-content, .accordion.style-5 li .accordion-content, .accordion.style-6 li .accordion-content {
+  padding: 0 30px;
+}
+
+.accordion.style-4 li .accordion-content::before, .accordion.style-5 li .accordion-content::before, .accordion.style-6 li .accordion-content::before {
+  height: 20px;
+}
+
+.accordion.style-4 li .accordion-content::after, .accordion.style-5 li .accordion-content::after, .accordion.style-6 li .accordion-content::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 12px;
+}
+
+.accordion.style-4 li .accordion-title {
+  background: #f5f5f5;
+}
+
+.accordion.style-5 li .accordion-title {
+  background: #f5f5f5;
+  border-radius: 50px;
+}
+
+.accordion.style-6 li .accordion-title {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.accordion.style-6 li.active .accordion-title {
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.bg-grey .accordion.style-4 li .accordion-title, .bg-grey .accordion.style-5 li .accordion-title, .bg-grey-lighter .accordion.style-4 li .accordion-title, .bg-grey-lighter .accordion.style-5 li .accordion-title, .bg-grey-lightest .accordion.style-4 li .accordion-title, .bg-grey-lightest .accordion.style-5 li .accordion-title {
+  background: #fff;
 }
 
 .bg-dark .accordion li, .bg-dark-lighter .accordion li, .bg-dark-lightest .accordion li, div[class^='bg-black'] .accordion li, div[class*=' bg-black'] .accordion li {
@@ -999,6 +1130,18 @@ pre {
 
 .bg-dark .accordion li .accordion-title:before, .bg-dark .accordion li .accordion-title:after, .bg-dark-lighter .accordion li .accordion-title:before, .bg-dark-lighter .accordion li .accordion-title:after, .bg-dark-lightest .accordion li .accordion-title:before, .bg-dark-lightest .accordion li .accordion-title:after, div[class^='bg-black'] .accordion li .accordion-title:before, div[class^='bg-black'] .accordion li .accordion-title:after, div[class*=' bg-black'] .accordion li .accordion-title:before, div[class*=' bg-black'] .accordion li .accordion-title:after {
   background: #fff;
+}
+
+.bg-dark .accordion.style-3 li .accordion-title, .bg-dark .accordion.style-6 li .accordion-title, .bg-dark-lighter .accordion.style-3 li .accordion-title, .bg-dark-lighter .accordion.style-6 li .accordion-title, .bg-dark-lightest .accordion.style-3 li .accordion-title, .bg-dark-lightest .accordion.style-6 li .accordion-title, div[class^='bg-black'] .accordion.style-3 li .accordion-title, div[class^='bg-black'] .accordion.style-6 li .accordion-title, div[class*=' bg-black'] .accordion.style-3 li .accordion-title, div[class*=' bg-black'] .accordion.style-6 li .accordion-title {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-dark .accordion.style-3 li.active .accordion-title, .bg-dark .accordion.style-6 li.active .accordion-title, .bg-dark-lighter .accordion.style-3 li.active .accordion-title, .bg-dark-lighter .accordion.style-6 li.active .accordion-title, .bg-dark-lightest .accordion.style-3 li.active .accordion-title, .bg-dark-lightest .accordion.style-6 li.active .accordion-title, div[class^='bg-black'] .accordion.style-3 li.active .accordion-title, div[class^='bg-black'] .accordion.style-6 li.active .accordion-title, div[class*=' bg-black'] .accordion.style-3 li.active .accordion-title, div[class*=' bg-black'] .accordion.style-6 li.active .accordion-title {
+  border-color: #fff;
+}
+
+.bg-dark .accordion.style-4 li .accordion-title, .bg-dark .accordion.style-5 li .accordion-title, .bg-dark-lighter .accordion.style-4 li .accordion-title, .bg-dark-lighter .accordion.style-5 li .accordion-title, .bg-dark-lightest .accordion.style-4 li .accordion-title, .bg-dark-lightest .accordion.style-5 li .accordion-title, div[class^='bg-black'] .accordion.style-4 li .accordion-title, div[class^='bg-black'] .accordion.style-5 li .accordion-title, div[class*=' bg-black'] .accordion.style-4 li .accordion-title, div[class*=' bg-black'] .accordion.style-5 li .accordion-title {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .alert a:hover {
@@ -1036,7 +1179,31 @@ pre {
 }
 
 .badge {
+  padding: 4px 6px;
   vertical-align: middle;
+}
+
+.badge-xs {
+  padding: 4px 6px;
+}
+
+.badge-sm {
+  padding: 8px 12px;
+}
+
+.badge-md {
+  padding: 10px 16px;
+  font-size: 80%;
+}
+
+.badge-lg {
+  padding: 14px 20px;
+  font-size: 90%;
+}
+
+.badge-xl {
+  padding: 18px 30px;
+  font-size: 100%;
 }
 
 .badge-secondary {
@@ -1049,6 +1216,23 @@ pre {
 
 .badge-secondary, .badge-warning, .badge-light {
   color: #141414;
+}
+
+a.badge-secondary {
+  background: #dcdcdc;
+}
+
+a.badge-secondary:hover, a.badge-secondary:focus {
+  background: #d2d2d2;
+  color: #141414;
+}
+
+a.badge-light {
+  background: #f0f0f0;
+}
+
+a.badge-light:hover, a.badge-light:focus {
+  background: #e6e6e6;
 }
 
 .border-radius {
@@ -1076,6 +1260,16 @@ pre {
   box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.14);
 }
 
+.hover-shadow {
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+
+.hover-shadow:hover {
+  -webkit-box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.09);
+}
+
 .hover-float {
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
@@ -1099,7 +1293,7 @@ pre {
 .blockquote {
   background: #f7f7f7;
   margin-bottom: 20px;
-  padding: 25px 30px;
+  padding: 24px 30px;
 }
 
 .blockquote p {
@@ -1138,13 +1332,12 @@ pre {
 
 .blockquote.blockquote-style-2 {
   background: transparent;
-  border-left: 4px solid rgba(0, 0, 0, 0.1);
-  padding: 5px 0 5px 30px;
+  border-left: 3px solid rgba(0, 0, 0, 0.1);
 }
 
 .blockquote.blockquote-style-3 {
   background: #f5f5f5;
-  border-left: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 3px solid rgba(0, 0, 0, 0.1);
 }
 
 .blockquote.blockquote-style-4 {
@@ -1161,6 +1354,7 @@ pre {
   color: rgba(0, 0, 0, 0.1);
   font-family: "Font Awesome 5 Free";
   font-size: 24px;
+  font-weight: 900;
 }
 
 .bg-dark .blockquote, .bg-dark-lighter .blockquote, .bg-dark-lightest .blockquote, div[class^='bg-black'] .blockquote, div[class*=' bg-black'] .blockquote {
@@ -1489,13 +1683,13 @@ pre {
 }
 
 .btn-dark, a.btn-dark {
-  background: #282828;
-  border-color: #282828;
+  background: #1e1e1e;
+  border-color: #1e1e1e;
   color: #fff;
 }
 
 .btn-dark.disabled, a.btn-dark.disabled {
-  background: #282828;
+  background: #1e1e1e;
   color: #fff;
 }
 
@@ -1725,15 +1919,15 @@ a.btn-outline-light.focus {
 .btn-outline-dark,
 a.btn-outline-dark {
   background: transparent;
-  border-color: #282828;
+  border-color: #1e1e1e;
 }
 
 .btn-outline-dark:hover, .btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active,
 a.btn-outline-dark:hover,
 a.btn-outline-dark:not(:disabled):not(.disabled).active,
 a.btn-outline-dark:not(:disabled):not(.disabled):active {
-  background: #282828;
-  border-color: #282828;
+  background: #1e1e1e;
+  border-color: #1e1e1e;
   color: #fff;
 }
 
@@ -1849,8 +2043,8 @@ a.btn-outline-dark.focus {
 }
 
 .button-dark, a.button-dark {
-  background: #282828;
-  border-color: #282828;
+  background: #1e1e1e;
+  border-color: #1e1e1e;
   color: #fff;
 }
 
@@ -2272,8 +2466,8 @@ a.btn-outline-dark.focus {
 
 .button-reveal-left-dark, a.button-reveal-left-dark,
 .button-reveal-right-dark, a.button-reveal-right-dark {
-  background: #282828;
-  border-color: #282828;
+  background: #1e1e1e;
+  border-color: #1e1e1e;
   color: #fff;
 }
 
@@ -2907,8 +3101,8 @@ a.btn-outline-dark.focus {
 }
 
 .button-circle-dark, a.button-circle-dark {
-  background: #282828;
-  border-color: #282828;
+  background: #1e1e1e;
+  border-color: #1e1e1e;
   color: #fff;
 }
 
@@ -3485,6 +3679,10 @@ input:focus, textarea:focus, .form-control:focus {
   padding-left: 3px;
 }
 
+select {
+  margin-bottom: 10px;
+}
+
 .custom-select {
   background-color: transparent;
   width: auto;
@@ -3493,14 +3691,14 @@ input:focus, textarea:focus, .form-control:focus {
   border-radius: 0;
   padding: 10px 15px;
   border-color: rgba(0, 0, 0, 0.1);
-  color: #141414;
+  color: #646464;
   font-size: 14px;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
 
 .custom-select:focus {
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
   outline: 0;
   box-shadow: none;
 }
@@ -3519,10 +3717,11 @@ input:focus, textarea:focus, .form-control:focus {
   width: 100%;
 }
 
-form.form-style-3 input, form.form-style-3 textarea, form.form-style-3 .form-control, .form-style-3 input, .form-style-3 textarea, .form-style-3 .form-control,
+form.form-style-3 input, form.form-style-3 textarea, form.form-style-3 .custom-select, form.form-style-3 .form-control, .form-style-3 input, .form-style-3 textarea, .form-style-3 .custom-select, .form-style-3 .form-control,
 form.form-style-4 input,
 form.form-style-4 textarea,
-form.form-style-4 .form-control, .form-style-4 input, .form-style-4 textarea, .form-style-4 .form-control {
+form.form-style-4 .custom-select,
+form.form-style-4 .form-control, .form-style-4 input, .form-style-4 textarea, .form-style-4 .custom-select, .form-style-4 .form-control {
   margin-bottom: 20px;
   padding: 0 0 10px;
   border-top-width: 0;
@@ -3531,39 +3730,28 @@ form.form-style-4 .form-control, .form-style-4 input, .form-style-4 textarea, .f
   border-left-width: 0;
 }
 
-form.form-style-2 input:focus, form.form-style-2 textarea:focus, form.form-style-2 .form-control:focus, .form-style-2 input:focus, .form-style-2 textarea:focus, .form-style-2 .form-control:focus,
+form.form-style-2 input:focus, form.form-style-2 textarea:focus, form.form-style-2 .custom-select:focus, form.form-style-2 .form-control:focus, .form-style-2 input:focus, .form-style-2 textarea:focus, .form-style-2 .custom-select:focus, .form-style-2 .form-control:focus,
 form.form-style-4 input:focus,
 form.form-style-4 textarea:focus,
-form.form-style-4 .form-control:focus, .form-style-4 input:focus, .form-style-4 textarea:focus, .form-style-4 .form-control:focus {
-  border-color: #141414;
+form.form-style-4 .custom-select:focus,
+form.form-style-4 .form-control:focus, .form-style-4 input:focus, .form-style-4 textarea:focus, .form-style-4 .custom-select:focus, .form-style-4 .form-control:focus {
+  border-color: rgba(0, 0, 0, 0.9);
 }
 
-form.form-style-5 input, form.form-style-5 textarea, form.form-style-5 .form-control, .form-style-5 input, .form-style-5 textarea, .form-style-5 .form-control {
+form.form-style-5 input, form.form-style-5 textarea, form.form-style-5 .custom-select, form.form-style-5 .form-control, .form-style-5 input, .form-style-5 textarea, .form-style-5 .custom-select, .form-style-5 .form-control {
   background: #f5f5f5;
   border: 0;
 }
 
-form.form-style-5 input:focus, form.form-style-5 textarea:focus, form.form-style-5 .form-control:focus, .form-style-5 input:focus, .form-style-5 textarea:focus, .form-style-5 .form-control:focus {
+form.form-style-5 input:focus, form.form-style-5 textarea:focus, form.form-style-5 .custom-select:focus, form.form-style-5 .form-control:focus, .form-style-5 input:focus, .form-style-5 textarea:focus, .form-style-5 .custom-select:focus, .form-style-5 .form-control:focus {
   background: #f0f0f0;
 }
 
-.bg-grey form.form-style-5 input, .bg-grey form.form-style-5 textarea, .bg-grey form.form-style-5 .form-control, .bg-grey .form-style-5 input, .bg-grey .form-style-5 textarea, .bg-grey .form-style-5 .form-control, .bg-grey-lighter form.form-style-5 input, .bg-grey-lighter form.form-style-5 textarea, .bg-grey-lighter form.form-style-5 .form-control, .bg-grey-lighter .form-style-5 input, .bg-grey-lighter .form-style-5 textarea, .bg-grey-lighter .form-style-5 .form-control, .bg-grey-lightest form.form-style-5 input, .bg-grey-lightest form.form-style-5 textarea, .bg-grey-lightest form.form-style-5 .form-control, .bg-grey-lightest .form-style-5 input, .bg-grey-lightest .form-style-5 textarea, .bg-grey-lightest .form-style-5 .form-control,
-.bg-grey-gradient-top form.form-style-5 input,
-.bg-grey-gradient-top form.form-style-5 textarea,
-.bg-grey-gradient-top form.form-style-5 .form-control,
-.bg-grey-gradient-top .form-style-5 input,
-.bg-grey-gradient-top .form-style-5 textarea,
-.bg-grey-gradient-top .form-style-5 .form-control, .bg-grey-gradient-right form.form-style-5 input, .bg-grey-gradient-right form.form-style-5 textarea, .bg-grey-gradient-right form.form-style-5 .form-control, .bg-grey-gradient-right .form-style-5 input, .bg-grey-gradient-right .form-style-5 textarea, .bg-grey-gradient-right .form-style-5 .form-control, .bg-grey-gradient-bottom form.form-style-5 input, .bg-grey-gradient-bottom form.form-style-5 textarea, .bg-grey-gradient-bottom form.form-style-5 .form-control, .bg-grey-gradient-bottom .form-style-5 input, .bg-grey-gradient-bottom .form-style-5 textarea, .bg-grey-gradient-bottom .form-style-5 .form-control, .bg-grey-gradient-left form.form-style-5 input, .bg-grey-gradient-left form.form-style-5 textarea, .bg-grey-gradient-left form.form-style-5 .form-control, .bg-grey-gradient-left .form-style-5 input, .bg-grey-gradient-left .form-style-5 textarea, .bg-grey-gradient-left .form-style-5 .form-control {
+div[class^='bg-grey'] form.form-style-5 input, div[class^='bg-grey'] form.form-style-5 textarea, div[class^='bg-grey'] form.form-style-5 .custom-select, div[class^='bg-grey'] form.form-style-5 .form-control, div[class^='bg-grey'] .form-style-5 input, div[class^='bg-grey'] .form-style-5 textarea, div[class^='bg-grey'] .form-style-5 .custom-select, div[class^='bg-grey'] .form-style-5 .form-control, div[class*=' bg-grey'] form.form-style-5 input, div[class*=' bg-grey'] form.form-style-5 textarea, div[class*=' bg-grey'] form.form-style-5 .custom-select, div[class*=' bg-grey'] form.form-style-5 .form-control, div[class*=' bg-grey'] .form-style-5 input, div[class*=' bg-grey'] .form-style-5 textarea, div[class*=' bg-grey'] .form-style-5 .custom-select, div[class*=' bg-grey'] .form-style-5 .form-control {
   background: #fff;
 }
 
-.bg-grey form.form-style-5 input:focus, .bg-grey form.form-style-5 textarea:focus, .bg-grey form.form-style-5 .form-control:focus, .bg-grey .form-style-5 input:focus, .bg-grey .form-style-5 textarea:focus, .bg-grey .form-style-5 .form-control:focus, .bg-grey-lighter form.form-style-5 input:focus, .bg-grey-lighter form.form-style-5 textarea:focus, .bg-grey-lighter form.form-style-5 .form-control:focus, .bg-grey-lighter .form-style-5 input:focus, .bg-grey-lighter .form-style-5 textarea:focus, .bg-grey-lighter .form-style-5 .form-control:focus, .bg-grey-lightest form.form-style-5 input:focus, .bg-grey-lightest form.form-style-5 textarea:focus, .bg-grey-lightest form.form-style-5 .form-control:focus, .bg-grey-lightest .form-style-5 input:focus, .bg-grey-lightest .form-style-5 textarea:focus, .bg-grey-lightest .form-style-5 .form-control:focus,
-.bg-grey-gradient-top form.form-style-5 input:focus,
-.bg-grey-gradient-top form.form-style-5 textarea:focus,
-.bg-grey-gradient-top form.form-style-5 .form-control:focus,
-.bg-grey-gradient-top .form-style-5 input:focus,
-.bg-grey-gradient-top .form-style-5 textarea:focus,
-.bg-grey-gradient-top .form-style-5 .form-control:focus, .bg-grey-gradient-right form.form-style-5 input:focus, .bg-grey-gradient-right form.form-style-5 textarea:focus, .bg-grey-gradient-right form.form-style-5 .form-control:focus, .bg-grey-gradient-right .form-style-5 input:focus, .bg-grey-gradient-right .form-style-5 textarea:focus, .bg-grey-gradient-right .form-style-5 .form-control:focus, .bg-grey-gradient-bottom form.form-style-5 input:focus, .bg-grey-gradient-bottom form.form-style-5 textarea:focus, .bg-grey-gradient-bottom form.form-style-5 .form-control:focus, .bg-grey-gradient-bottom .form-style-5 input:focus, .bg-grey-gradient-bottom .form-style-5 textarea:focus, .bg-grey-gradient-bottom .form-style-5 .form-control:focus, .bg-grey-gradient-left form.form-style-5 input:focus, .bg-grey-gradient-left form.form-style-5 textarea:focus, .bg-grey-gradient-left form.form-style-5 .form-control:focus, .bg-grey-gradient-left .form-style-5 input:focus, .bg-grey-gradient-left .form-style-5 textarea:focus, .bg-grey-gradient-left .form-style-5 .form-control:focus {
+div[class^='bg-grey'] form.form-style-5 input:focus, div[class^='bg-grey'] form.form-style-5 textarea:focus, div[class^='bg-grey'] form.form-style-5 .custom-select:focus, div[class^='bg-grey'] form.form-style-5 .form-control:focus, div[class^='bg-grey'] .form-style-5 input:focus, div[class^='bg-grey'] .form-style-5 textarea:focus, div[class^='bg-grey'] .form-style-5 .custom-select:focus, div[class^='bg-grey'] .form-style-5 .form-control:focus, div[class*=' bg-grey'] form.form-style-5 input:focus, div[class*=' bg-grey'] form.form-style-5 textarea:focus, div[class*=' bg-grey'] form.form-style-5 .custom-select:focus, div[class*=' bg-grey'] form.form-style-5 .form-control:focus, div[class*=' bg-grey'] .form-style-5 input:focus, div[class*=' bg-grey'] .form-style-5 textarea:focus, div[class*=' bg-grey'] .form-style-5 .custom-select:focus, div[class*=' bg-grey'] .form-style-5 .form-control:focus {
   background: #fff;
 }
 
@@ -3597,36 +3785,47 @@ form.form-style-5 input:focus, form.form-style-5 textarea:focus, form.form-style
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.bg-dark form.form-style-2 input:focus, .bg-dark form.form-style-2 textarea:focus, .bg-dark form.form-style-2 .form-control:focus, .bg-dark .form-style-2 input:focus, .bg-dark .form-style-2 textarea:focus, .bg-dark .form-style-2 .form-control:focus,
+.bg-dark .custom-select, .bg-dark-lighter .custom-select, .bg-dark-lightest .custom-select, div[class^='bg-black'] .custom-select, div[class*=' bg-black'] .custom-select {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-dark .custom-select:focus, .bg-dark-lighter .custom-select:focus, .bg-dark-lightest .custom-select:focus, div[class^='bg-black'] .custom-select:focus, div[class*=' bg-black'] .custom-select:focus {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-dark form.form-style-2 input:focus, .bg-dark form.form-style-2 textarea:focus, .bg-dark form.form-style-2 .custom-select:focus, .bg-dark form.form-style-2 .form-control:focus, .bg-dark .form-style-2 input:focus, .bg-dark .form-style-2 textarea:focus, .bg-dark .form-style-2 .custom-select:focus, .bg-dark .form-style-2 .form-control:focus,
 .bg-dark form.form-style-4 input:focus,
 .bg-dark form.form-style-4 textarea:focus,
-.bg-dark form.form-style-4 .form-control:focus, .bg-dark .form-style-4 input:focus, .bg-dark .form-style-4 textarea:focus, .bg-dark .form-style-4 .form-control:focus, .bg-dark-lighter form.form-style-2 input:focus, .bg-dark-lighter form.form-style-2 textarea:focus, .bg-dark-lighter form.form-style-2 .form-control:focus, .bg-dark-lighter .form-style-2 input:focus, .bg-dark-lighter .form-style-2 textarea:focus, .bg-dark-lighter .form-style-2 .form-control:focus,
+.bg-dark form.form-style-4 .custom-select:focus,
+.bg-dark form.form-style-4 .form-control:focus, .bg-dark .form-style-4 input:focus, .bg-dark .form-style-4 textarea:focus, .bg-dark .form-style-4 .custom-select:focus, .bg-dark .form-style-4 .form-control:focus, .bg-dark-lighter form.form-style-2 input:focus, .bg-dark-lighter form.form-style-2 textarea:focus, .bg-dark-lighter form.form-style-2 .custom-select:focus, .bg-dark-lighter form.form-style-2 .form-control:focus, .bg-dark-lighter .form-style-2 input:focus, .bg-dark-lighter .form-style-2 textarea:focus, .bg-dark-lighter .form-style-2 .custom-select:focus, .bg-dark-lighter .form-style-2 .form-control:focus,
 .bg-dark-lighter form.form-style-4 input:focus,
 .bg-dark-lighter form.form-style-4 textarea:focus,
-.bg-dark-lighter form.form-style-4 .form-control:focus, .bg-dark-lighter .form-style-4 input:focus, .bg-dark-lighter .form-style-4 textarea:focus, .bg-dark-lighter .form-style-4 .form-control:focus, .bg-dark-lightest form.form-style-2 input:focus, .bg-dark-lightest form.form-style-2 textarea:focus, .bg-dark-lightest form.form-style-2 .form-control:focus, .bg-dark-lightest .form-style-2 input:focus, .bg-dark-lightest .form-style-2 textarea:focus, .bg-dark-lightest .form-style-2 .form-control:focus,
+.bg-dark-lighter form.form-style-4 .custom-select:focus,
+.bg-dark-lighter form.form-style-4 .form-control:focus, .bg-dark-lighter .form-style-4 input:focus, .bg-dark-lighter .form-style-4 textarea:focus, .bg-dark-lighter .form-style-4 .custom-select:focus, .bg-dark-lighter .form-style-4 .form-control:focus, .bg-dark-lightest form.form-style-2 input:focus, .bg-dark-lightest form.form-style-2 textarea:focus, .bg-dark-lightest form.form-style-2 .custom-select:focus, .bg-dark-lightest form.form-style-2 .form-control:focus, .bg-dark-lightest .form-style-2 input:focus, .bg-dark-lightest .form-style-2 textarea:focus, .bg-dark-lightest .form-style-2 .custom-select:focus, .bg-dark-lightest .form-style-2 .form-control:focus,
 .bg-dark-lightest form.form-style-4 input:focus,
 .bg-dark-lightest form.form-style-4 textarea:focus,
-.bg-dark-lightest form.form-style-4 .form-control:focus, .bg-dark-lightest .form-style-4 input:focus, .bg-dark-lightest .form-style-4 textarea:focus, .bg-dark-lightest .form-style-4 .form-control:focus, div[class^='bg-black'] form.form-style-2 input:focus, div[class^='bg-black'] form.form-style-2 textarea:focus, div[class^='bg-black'] form.form-style-2 .form-control:focus, div[class^='bg-black'] .form-style-2 input:focus, div[class^='bg-black'] .form-style-2 textarea:focus, div[class^='bg-black'] .form-style-2 .form-control:focus,
+.bg-dark-lightest form.form-style-4 .custom-select:focus,
+.bg-dark-lightest form.form-style-4 .form-control:focus, .bg-dark-lightest .form-style-4 input:focus, .bg-dark-lightest .form-style-4 textarea:focus, .bg-dark-lightest .form-style-4 .custom-select:focus, .bg-dark-lightest .form-style-4 .form-control:focus, div[class^='bg-black'] form.form-style-2 input:focus, div[class^='bg-black'] form.form-style-2 textarea:focus, div[class^='bg-black'] form.form-style-2 .custom-select:focus, div[class^='bg-black'] form.form-style-2 .form-control:focus, div[class^='bg-black'] .form-style-2 input:focus, div[class^='bg-black'] .form-style-2 textarea:focus, div[class^='bg-black'] .form-style-2 .custom-select:focus, div[class^='bg-black'] .form-style-2 .form-control:focus,
 div[class^='bg-black'] form.form-style-4 input:focus,
 div[class^='bg-black'] form.form-style-4 textarea:focus,
-div[class^='bg-black'] form.form-style-4 .form-control:focus, div[class^='bg-black'] .form-style-4 input:focus, div[class^='bg-black'] .form-style-4 textarea:focus, div[class^='bg-black'] .form-style-4 .form-control:focus, div[class*=' bg-black'] form.form-style-2 input:focus, div[class*=' bg-black'] form.form-style-2 textarea:focus, div[class*=' bg-black'] form.form-style-2 .form-control:focus, div[class*=' bg-black'] .form-style-2 input:focus, div[class*=' bg-black'] .form-style-2 textarea:focus, div[class*=' bg-black'] .form-style-2 .form-control:focus,
+div[class^='bg-black'] form.form-style-4 .custom-select:focus,
+div[class^='bg-black'] form.form-style-4 .form-control:focus, div[class^='bg-black'] .form-style-4 input:focus, div[class^='bg-black'] .form-style-4 textarea:focus, div[class^='bg-black'] .form-style-4 .custom-select:focus, div[class^='bg-black'] .form-style-4 .form-control:focus, div[class*=' bg-black'] form.form-style-2 input:focus, div[class*=' bg-black'] form.form-style-2 textarea:focus, div[class*=' bg-black'] form.form-style-2 .custom-select:focus, div[class*=' bg-black'] form.form-style-2 .form-control:focus, div[class*=' bg-black'] .form-style-2 input:focus, div[class*=' bg-black'] .form-style-2 textarea:focus, div[class*=' bg-black'] .form-style-2 .custom-select:focus, div[class*=' bg-black'] .form-style-2 .form-control:focus,
 div[class*=' bg-black'] form.form-style-4 input:focus,
 div[class*=' bg-black'] form.form-style-4 textarea:focus,
-div[class*=' bg-black'] form.form-style-4 .form-control:focus, div[class*=' bg-black'] .form-style-4 input:focus, div[class*=' bg-black'] .form-style-4 textarea:focus, div[class*=' bg-black'] .form-style-4 .form-control:focus {
+div[class*=' bg-black'] form.form-style-4 .custom-select:focus,
+div[class*=' bg-black'] form.form-style-4 .form-control:focus, div[class*=' bg-black'] .form-style-4 input:focus, div[class*=' bg-black'] .form-style-4 textarea:focus, div[class*=' bg-black'] .form-style-4 .custom-select:focus, div[class*=' bg-black'] .form-style-4 .form-control:focus {
   border-color: #fff;
 }
 
-.bg-dark form.form-style-5 input, .bg-dark form.form-style-5 textarea, .bg-dark form.form-style-5 .form-control, .bg-dark .form-style-5 input, .bg-dark .form-style-5 textarea, .bg-dark .form-style-5 .form-control, .bg-dark-lighter form.form-style-5 input, .bg-dark-lighter form.form-style-5 textarea, .bg-dark-lighter form.form-style-5 .form-control, .bg-dark-lighter .form-style-5 input, .bg-dark-lighter .form-style-5 textarea, .bg-dark-lighter .form-style-5 .form-control, .bg-dark-lightest form.form-style-5 input, .bg-dark-lightest form.form-style-5 textarea, .bg-dark-lightest form.form-style-5 .form-control, .bg-dark-lightest .form-style-5 input, .bg-dark-lightest .form-style-5 textarea, .bg-dark-lightest .form-style-5 .form-control, div[class^='bg-black'] form.form-style-5 input, div[class^='bg-black'] form.form-style-5 textarea, div[class^='bg-black'] form.form-style-5 .form-control, div[class^='bg-black'] .form-style-5 input, div[class^='bg-black'] .form-style-5 textarea, div[class^='bg-black'] .form-style-5 .form-control, div[class*=' bg-black'] form.form-style-5 input, div[class*=' bg-black'] form.form-style-5 textarea, div[class*=' bg-black'] form.form-style-5 .form-control, div[class*=' bg-black'] .form-style-5 input, div[class*=' bg-black'] .form-style-5 textarea, div[class*=' bg-black'] .form-style-5 .form-control {
+.bg-dark form.form-style-5 input, .bg-dark form.form-style-5 textarea, .bg-dark form.form-style-5 .custom-select, .bg-dark form.form-style-5 .form-control, .bg-dark .form-style-5 input, .bg-dark .form-style-5 textarea, .bg-dark .form-style-5 .custom-select, .bg-dark .form-style-5 .form-control, .bg-dark-lighter form.form-style-5 input, .bg-dark-lighter form.form-style-5 textarea, .bg-dark-lighter form.form-style-5 .custom-select, .bg-dark-lighter form.form-style-5 .form-control, .bg-dark-lighter .form-style-5 input, .bg-dark-lighter .form-style-5 textarea, .bg-dark-lighter .form-style-5 .custom-select, .bg-dark-lighter .form-style-5 .form-control, .bg-dark-lightest form.form-style-5 input, .bg-dark-lightest form.form-style-5 textarea, .bg-dark-lightest form.form-style-5 .custom-select, .bg-dark-lightest form.form-style-5 .form-control, .bg-dark-lightest .form-style-5 input, .bg-dark-lightest .form-style-5 textarea, .bg-dark-lightest .form-style-5 .custom-select, .bg-dark-lightest .form-style-5 .form-control, div[class^='bg-black'] form.form-style-5 input, div[class^='bg-black'] form.form-style-5 textarea, div[class^='bg-black'] form.form-style-5 .custom-select, div[class^='bg-black'] form.form-style-5 .form-control, div[class^='bg-black'] .form-style-5 input, div[class^='bg-black'] .form-style-5 textarea, div[class^='bg-black'] .form-style-5 .custom-select, div[class^='bg-black'] .form-style-5 .form-control, div[class*=' bg-black'] form.form-style-5 input, div[class*=' bg-black'] form.form-style-5 textarea, div[class*=' bg-black'] form.form-style-5 .custom-select, div[class*=' bg-black'] form.form-style-5 .form-control, div[class*=' bg-black'] .form-style-5 input, div[class*=' bg-black'] .form-style-5 textarea, div[class*=' bg-black'] .form-style-5 .custom-select, div[class*=' bg-black'] .form-style-5 .form-control {
   background: rgba(255, 255, 255, 0.1);
   border: 0;
 }
 
-.bg-dark form.form-style-5 input:focus, .bg-dark form.form-style-5 textarea:focus, .bg-dark form.form-style-5 .form-control:focus, .bg-dark .form-style-5 input:focus, .bg-dark .form-style-5 textarea:focus, .bg-dark .form-style-5 .form-control:focus, .bg-dark-lighter form.form-style-5 input:focus, .bg-dark-lighter form.form-style-5 textarea:focus, .bg-dark-lighter form.form-style-5 .form-control:focus, .bg-dark-lighter .form-style-5 input:focus, .bg-dark-lighter .form-style-5 textarea:focus, .bg-dark-lighter .form-style-5 .form-control:focus, .bg-dark-lightest form.form-style-5 input:focus, .bg-dark-lightest form.form-style-5 textarea:focus, .bg-dark-lightest form.form-style-5 .form-control:focus, .bg-dark-lightest .form-style-5 input:focus, .bg-dark-lightest .form-style-5 textarea:focus, .bg-dark-lightest .form-style-5 .form-control:focus, div[class^='bg-black'] form.form-style-5 input:focus, div[class^='bg-black'] form.form-style-5 textarea:focus, div[class^='bg-black'] form.form-style-5 .form-control:focus, div[class^='bg-black'] .form-style-5 input:focus, div[class^='bg-black'] .form-style-5 textarea:focus, div[class^='bg-black'] .form-style-5 .form-control:focus, div[class*=' bg-black'] form.form-style-5 input:focus, div[class*=' bg-black'] form.form-style-5 textarea:focus, div[class*=' bg-black'] form.form-style-5 .form-control:focus, div[class*=' bg-black'] .form-style-5 input:focus, div[class*=' bg-black'] .form-style-5 textarea:focus, div[class*=' bg-black'] .form-style-5 .form-control:focus {
+.bg-dark form.form-style-5 input:focus, .bg-dark form.form-style-5 textarea:focus, .bg-dark form.form-style-5 .custom-select:focus, .bg-dark form.form-style-5 .form-control:focus, .bg-dark .form-style-5 input:focus, .bg-dark .form-style-5 textarea:focus, .bg-dark .form-style-5 .custom-select:focus, .bg-dark .form-style-5 .form-control:focus, .bg-dark-lighter form.form-style-5 input:focus, .bg-dark-lighter form.form-style-5 textarea:focus, .bg-dark-lighter form.form-style-5 .custom-select:focus, .bg-dark-lighter form.form-style-5 .form-control:focus, .bg-dark-lighter .form-style-5 input:focus, .bg-dark-lighter .form-style-5 textarea:focus, .bg-dark-lighter .form-style-5 .custom-select:focus, .bg-dark-lighter .form-style-5 .form-control:focus, .bg-dark-lightest form.form-style-5 input:focus, .bg-dark-lightest form.form-style-5 textarea:focus, .bg-dark-lightest form.form-style-5 .custom-select:focus, .bg-dark-lightest form.form-style-5 .form-control:focus, .bg-dark-lightest .form-style-5 input:focus, .bg-dark-lightest .form-style-5 textarea:focus, .bg-dark-lightest .form-style-5 .custom-select:focus, .bg-dark-lightest .form-style-5 .form-control:focus, div[class^='bg-black'] form.form-style-5 input:focus, div[class^='bg-black'] form.form-style-5 textarea:focus, div[class^='bg-black'] form.form-style-5 .custom-select:focus, div[class^='bg-black'] form.form-style-5 .form-control:focus, div[class^='bg-black'] .form-style-5 input:focus, div[class^='bg-black'] .form-style-5 textarea:focus, div[class^='bg-black'] .form-style-5 .custom-select:focus, div[class^='bg-black'] .form-style-5 .form-control:focus, div[class*=' bg-black'] form.form-style-5 input:focus, div[class*=' bg-black'] form.form-style-5 textarea:focus, div[class*=' bg-black'] form.form-style-5 .custom-select:focus, div[class*=' bg-black'] form.form-style-5 .form-control:focus, div[class*=' bg-black'] .form-style-5 input:focus, div[class*=' bg-black'] .form-style-5 textarea:focus, div[class*=' bg-black'] .form-style-5 .custom-select:focus, div[class*=' bg-black'] .form-style-5 .form-control:focus {
   background: rgba(255, 255, 255, 0.2);
-}
-
-.bg-dark .custom-select, .bg-dark-lighter .custom-select, .bg-dark-lightest .custom-select, div[class^='bg-black'] .custom-select, div[class*=' bg-black'] .custom-select {
-  background-color: #fff;
 }
 
 .hyperlink-1,
@@ -3866,7 +4065,7 @@ img {
   height: auto;
 }
 
-img.img-circle-xs, img.img-circle-sm, img.img-circle-md, img.img-circle-lg, img.img-circle-xl {
+img.img-circle-xs, img.img-circle-sm, img.img-circle-md, img.img-circle-lg, img.img-circle-xl, img.img-circle-2xl, img.img-circle-3xl {
   border-radius: 50%;
 }
 
@@ -3895,9 +4094,21 @@ img.img-circle-lg {
 }
 
 img.img-circle-xl {
-  min-width: 120px;
+  min-width: 140px;
   width: 140px;
   height: 140px;
+}
+
+img.img-circle-2xl {
+  min-width: 160px;
+  width: 160px;
+  height: 160px;
+}
+
+img.img-circle-3xl {
+  min-width: 180px;
+  width: 180px;
+  height: 180px;
 }
 
 ul {
@@ -3905,7 +4116,7 @@ ul {
 }
 
 ul li {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 
 ul li:last-child {
@@ -3913,7 +4124,7 @@ ul li:last-child {
 }
 
 ul li ul, ul li ol {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 ul li a {
@@ -3921,7 +4132,7 @@ ul li a {
   transition: linear 0.1s;
 }
 
-ul.list-unstyled, ul.list-dash, ul.list-long-dash, ul.list-horizontal, ul.list-horizontal-unstyled, ul.list-horizontal-dash, ul.list-horizontal-slash, ul.list-icon {
+ul.list-unstyled, ul.list-dash, ul.list-long-dash, ul.list-horizontal, ul.list-horizontal-unstyled, ul.list-horizontal-dash, ul.list-horizontal-slash, ul.list-horizontal-vbar, ul.list-icon {
   padding: 0;
 }
 
@@ -3949,7 +4160,7 @@ ul.list-long-dash li:before {
   content: '\0336';
 }
 
-ul.list-horizontal li, ul.list-horizontal-unstyled li, ul.list-horizontal-dash li, ul.list-horizontal-slash li {
+ul.list-horizontal li, ul.list-horizontal-unstyled li, ul.list-horizontal-dash li, ul.list-horizontal-slash li, ul.list-horizontal-vbar li {
   display: inline-block;
 }
 
@@ -4003,15 +4214,19 @@ ul.list-horizontal-slash li:after {
   content: '/';
 }
 
-ul.list-horizontal-dash li, ul.list-horizontal-slash li {
+ul.list-horizontal-vbar li:after {
+  content: '|';
+}
+
+ul.list-horizontal-dash li, ul.list-horizontal-slash li, ul.list-horizontal-vbar li {
   margin: 0;
 }
 
-ul.list-horizontal-dash li:after, ul.list-horizontal-slash li:after {
+ul.list-horizontal-dash li:after, ul.list-horizontal-slash li:after, ul.list-horizontal-vbar li:after {
   padding: 0 6px;
 }
 
-ul.list-horizontal-dash li:last-child:after, ul.list-horizontal-slash li:last-child:after {
+ul.list-horizontal-dash li:last-child:after, ul.list-horizontal-slash li:last-child:after, ul.list-horizontal-vbar li:last-child:after {
   content: '';
   padding: 0;
 }
@@ -4022,6 +4237,7 @@ ul.list-icon li {
 
 ul.list-icon li:before {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   padding-right: 8px;
 }
 
@@ -4082,7 +4298,7 @@ ol {
 }
 
 ol li {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 
 ol li:last-child {
@@ -4090,7 +4306,80 @@ ol li:last-child {
 }
 
 ol li ul, ol li ol {
-  margin-top: 10px;
+  margin-top: 8px;
+}
+
+ol.list-ordered {
+  list-style: none;
+  counter-reset: custom-counter;
+  padding-left: 0;
+}
+
+ol.list-ordered li {
+  position: relative;
+  padding-left: 34px;
+  counter-increment: custom-counter;
+}
+
+ol.list-ordered li::before {
+  content: counter(custom-counter);
+}
+
+ol.list-ordered li ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+ol.list-ordered-style-2 li::before, ol.list-ordered-style-3 li::before, ol.list-ordered-style-4 li::before, ol.list-ordered-style-5 li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+}
+
+ol.list-ordered-style-2 li::before {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+ol.list-ordered-style-3 li::before {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+ol.list-ordered-style-4 li::before {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+ol.list-ordered-style-5 li::before {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  color: #000;
+}
+
+.bg-dark ol.list-ordered-style-2 li::before, .bg-dark-lighter ol.list-ordered-style-2 li::before, .bg-dark-lightest ol.list-ordered-style-2 li::before, div[class^='bg-black'] ol.list-ordered-style-2 li::before, div[class*=' bg-black'] ol.list-ordered-style-2 li::before {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.bg-dark ol.list-ordered-style-3 li::before, .bg-dark-lighter ol.list-ordered-style-3 li::before, .bg-dark-lightest ol.list-ordered-style-3 li::before, div[class^='bg-black'] ol.list-ordered-style-3 li::before, div[class*=' bg-black'] ol.list-ordered-style-3 li::before {
+  background: #fff;
+  color: #000;
+}
+
+.bg-dark ol.list-ordered-style-4 li::before, .bg-dark-lighter ol.list-ordered-style-4 li::before, .bg-dark-lightest ol.list-ordered-style-4 li::before, div[class^='bg-black'] ol.list-ordered-style-4 li::before, div[class*=' bg-black'] ol.list-ordered-style-4 li::before {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bg-dark ol.list-ordered-style-5 li::before, .bg-dark-lighter ol.list-ordered-style-5 li::before, .bg-dark-lightest ol.list-ordered-style-5 li::before, div[class^='bg-black'] ol.list-ordered-style-5 li::before, div[class*=' bg-black'] ol.list-ordered-style-5 li::before {
+  border-color: #fff;
+  color: #fff;
 }
 
 .nav {
@@ -4168,7 +4457,7 @@ ol li ul, ol li ol {
 
 .nav.nav-pills .nav-item .nav-link.active,
 .nav.nav-pills .nav-item .show .nav-link {
-  background: #1e1e1e;
+  background: #1b1b1b;
   color: #fff;
 }
 
@@ -4220,36 +4509,23 @@ ol li ul, ol li ol {
   color: #fff;
 }
 
-.header-top ul {
-  margin: 0;
-  padding: 0;
+.header-top ul.list-horizontal-unstyled li {
+  margin: 0 16px 0 0;
 }
 
-.header-top ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 20px 0 0;
-}
-
-.header-top ul li:last-child {
+.header-top ul.list-horizontal-unstyled li:last-child {
   margin-right: 0;
 }
 
-.bg-white .header-top, .bg-white.header-top, .bg-grey .header-top, .bg-grey.header-top, .bg-grey-lighter .header-top, .bg-grey-lighter.header-top, .bg-grey-lightest .header-top, .bg-grey-lightest.header-top,
-.bg-grey-gradient-top .header-top,
-.bg-grey-gradient-top.header-top, .bg-grey-gradient-right .header-top, .bg-grey-gradient-right.header-top, .bg-grey-gradient-bottom .header-top, .bg-grey-gradient-bottom.header-top, .bg-grey-gradient-left .header-top, .bg-grey-gradient-left.header-top {
+.bg-white .header-top, .bg-white.header-top, div[class^='bg-grey'] .header-top, div[class^='bg-grey'].header-top, div[class*=' bg-grey'] .header-top, div[class*=' bg-grey'].header-top {
   color: #646464;
 }
 
-.bg-white .header-top a, .bg-white.header-top a, .bg-grey .header-top a, .bg-grey.header-top a, .bg-grey-lighter .header-top a, .bg-grey-lighter.header-top a, .bg-grey-lightest .header-top a, .bg-grey-lightest.header-top a,
-.bg-grey-gradient-top .header-top a,
-.bg-grey-gradient-top.header-top a, .bg-grey-gradient-right .header-top a, .bg-grey-gradient-right.header-top a, .bg-grey-gradient-bottom .header-top a, .bg-grey-gradient-bottom.header-top a, .bg-grey-gradient-left .header-top a, .bg-grey-gradient-left.header-top a {
+.bg-white .header-top a, .bg-white.header-top a, div[class^='bg-grey'] .header-top a, div[class^='bg-grey'].header-top a, div[class*=' bg-grey'] .header-top a, div[class*=' bg-grey'].header-top a {
   color: #141414;
 }
 
-.bg-white .header-top a:hover, .bg-white.header-top a:hover, .bg-grey .header-top a:hover, .bg-grey.header-top a:hover, .bg-grey-lighter .header-top a:hover, .bg-grey-lighter.header-top a:hover, .bg-grey-lightest .header-top a:hover, .bg-grey-lightest.header-top a:hover,
-.bg-grey-gradient-top .header-top a:hover,
-.bg-grey-gradient-top.header-top a:hover, .bg-grey-gradient-right .header-top a:hover, .bg-grey-gradient-right.header-top a:hover, .bg-grey-gradient-bottom .header-top a:hover, .bg-grey-gradient-bottom.header-top a:hover, .bg-grey-gradient-left .header-top a:hover, .bg-grey-gradient-left.header-top a:hover {
+.bg-white .header-top a:hover, .bg-white.header-top a:hover, div[class^='bg-grey'] .header-top a:hover, div[class^='bg-grey'].header-top a:hover, div[class*=' bg-grey'] .header-top a:hover, div[class*=' bg-grey'].header-top a:hover {
   color: #646464;
 }
 
@@ -4549,7 +4825,7 @@ ol li ul, ol li ol {
 @media (min-width: 992px) {
   .navbar .dropdown-dark .nav-item.nav-dropdown .dropdown-menu,
   .navbar .dropdown-dark .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu {
-    background: #1e1e1e;
+    background: #1b1b1b;
   }
   .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu,
   .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu {
@@ -4596,10 +4872,10 @@ ol li ul, ol li ol {
   .navbar .nav .nav-item.nav-dropdown .dropdown-menu li:hover a {
     padding-left: 2px;
   }
-  .navbar .nav .nav-item.nav-dropdown .dropdown-menu li:hover .sub-dropdown-menu a {
+  .navbar .nav .nav-item.nav-dropdown .dropdown-menu li .sub-dropdown-menu a {
     padding: 0;
   }
-  .navbar .nav .nav-item.nav-dropdown .dropdown-menu li:hover .sub-dropdown-menu a:hover {
+  .navbar .nav .nav-item.nav-dropdown .dropdown-menu li .sub-dropdown-menu a:hover {
     padding-left: 2px;
   }
   .navbar .nav .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu {
@@ -4723,7 +4999,7 @@ ol li ul, ol li ol {
     display: block;
   }
   .navbar .dropdown-dark {
-    background: #1e1e1e;
+    background: #1b1b1b;
   }
   .navbar .dropdown-grey {
     background: #f5f5f5;
@@ -4971,11 +5247,7 @@ ol li ul, ol li ol {
   }
 }
 
-.navbar-shrink.navbar-absolute .nav-toggle-btn .lines {
-  background: #141414;
-}
-
-.navbar-shrink.navbar-absolute .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute .nav-toggle-btn .lines:after {
+.navbar-shrink.navbar-absolute .nav-toggle-btn .lines, .navbar-shrink.navbar-absolute .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute .nav-toggle-btn .lines:after {
   background: #141414;
 }
 
@@ -5096,11 +5368,7 @@ ol li ul, ol li ol {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.navbar-shrink.navbar-absolute.navbar-dark .nav-toggle-btn .lines, .navbar-shrink.navbar-absolute.navbar-transparent-dark .nav-toggle-btn .lines, .navbar-shrink.navbar-absolute-dark.navbar-dark .nav-toggle-btn .lines, .navbar-shrink.navbar-absolute-dark.navbar-transparent-dark .nav-toggle-btn .lines {
-  background: #fff;
-}
-
-.navbar-shrink.navbar-absolute.navbar-dark .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute.navbar-dark .nav-toggle-btn .lines:after, .navbar-shrink.navbar-absolute.navbar-transparent-dark .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute.navbar-transparent-dark .nav-toggle-btn .lines:after, .navbar-shrink.navbar-absolute-dark.navbar-dark .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute-dark.navbar-dark .nav-toggle-btn .lines:after, .navbar-shrink.navbar-absolute-dark.navbar-transparent-dark .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute-dark.navbar-transparent-dark .nav-toggle-btn .lines:after {
+.navbar-shrink.navbar-absolute.navbar-dark .nav-toggle-btn .lines, .navbar-shrink.navbar-absolute.navbar-dark .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute.navbar-dark .nav-toggle-btn .lines:after, .navbar-shrink.navbar-absolute.navbar-transparent-dark .nav-toggle-btn .lines, .navbar-shrink.navbar-absolute.navbar-transparent-dark .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute.navbar-transparent-dark .nav-toggle-btn .lines:after, .navbar-shrink.navbar-absolute-dark.navbar-dark .nav-toggle-btn .lines, .navbar-shrink.navbar-absolute-dark.navbar-dark .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute-dark.navbar-dark .nav-toggle-btn .lines:after, .navbar-shrink.navbar-absolute-dark.navbar-transparent-dark .nav-toggle-btn .lines, .navbar-shrink.navbar-absolute-dark.navbar-transparent-dark .nav-toggle-btn .lines:before, .navbar-shrink.navbar-absolute-dark.navbar-transparent-dark .nav-toggle-btn .lines:after {
   background: #fff;
 }
 
@@ -5339,7 +5607,7 @@ ol li ul, ol li ol {
     background: #f5f5f5;
   }
   .navbar .nav.dropdown-dark .nav-megadropdown .mega-menu {
-    background: #1e1e1e;
+    background: #1b1b1b;
   }
   .navbar .nav.dropdown-transparent .nav-megadropdown .mega-menu {
     background: rgba(255, 255, 255, 0.9);
@@ -5471,6 +5739,27 @@ ol li ul, ol li ol {
   color: rgba(0, 0, 0, 0.9);
 }
 
+.pie-chart {
+  position: relative;
+  display: inline-block;
+}
+
+.pie-chart-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  margin-top: -3px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.pie-chart-content .percent::after {
+  content: '%';
+}
+
 .popover {
   border: 0;
   -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.08);
@@ -5591,7 +5880,7 @@ ol li ul, ol li ol {
 }
 
 .table.table-dark {
-  background: #1e1e1e;
+  background: #1b1b1b;
 }
 
 .table.table-dark thead th {
@@ -5611,7 +5900,7 @@ ol li ul, ol li ol {
 }
 
 .table .thead-dark th {
-  background: #1e1e1e;
+  background: #1b1b1b;
   border-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -6043,7 +6332,6 @@ i {
 
 .blog-post-box .blog-post-content {
   padding-top: 30px;
-  text-align: center;
 }
 
 .blog-post-box .blog-post-content .blog-post-title {
@@ -6057,10 +6345,6 @@ i {
 .blog-post-box .blog-post-content .blog-post-title span {
   color: #a0a0a0;
   font-size: 14px;
-}
-
-.blog-post-box .blog-post-content p {
-  text-align: left;
 }
 
 .blog-post-box .blog-post-content .btn, .blog-post-box .blog-post-content .button, .blog-post-box .blog-post-content .text-btn, .blog-post-box .blog-post-content .text-btn-2, .blog-post-box .blog-post-content .text-btn-3 {
@@ -6332,17 +6616,17 @@ i {
   transition: ease-out 0.2s;
 }
 
+.submit-result span.show-result {
+  margin-top: 30px;
+  display: block;
+}
+
 .submit-result span#success {
   color: #24963e;
 }
 
 .submit-result span#error {
   color: #c62f3e;
-}
-
-.submit-result span.show-result {
-  margin-top: 30px;
-  display: block;
 }
 
 .submit-result span .error-color {
@@ -6364,13 +6648,13 @@ i {
   padding: 70px 0;
 }
 
-.footer #map-canvas {
+.footer .gmap {
   width: 100%;
   height: 100%;
 }
 
 @media (max-width: 992px) {
-  .footer #map-canvas {
+  .footer .gmap {
     height: 250px;
   }
 }
@@ -6915,6 +7199,7 @@ i {
 .hoverbox-9 .content,
 .hoverbox-10 .content {
   position: absolute;
+  z-index: 2;
   display: inline-block;
   background: #fff;
   padding: 10px 20px;
@@ -7247,12 +7532,7 @@ button.mfp-close:hover {
   font-size: 14px;
 }
 
-.mfp-iframe-scaler iframe {
-  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.3);
-}
-
-.mfp-figure:after {
+.mfp-iframe-scaler iframe, .mfp-figure::after {
   -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.3);
 }
@@ -7272,11 +7552,7 @@ button.mfp-close:hover {
   transform: scale(1.02);
 }
 
-.gmap-xs,
-.gmap-sm,
-.gmap-md,
-.gmap-lg,
-.gmap-xl {
+.gmap {
   width: 100%;
 }
 
@@ -7944,65 +8220,6 @@ button.mfp-close:hover {
   filter: blur(0);
 }
 
-.infinite-scroll-status {
-  display: none;
-  margin-top: 30px;
-  text-align: center;
-  color: #646464;
-}
-
-.infinite-scroll-status .infinite-scroll-request span {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.9);
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  margin-right: 5px;
-  -webkit-animation: infinite-load-wave 0.6s infinite ease-in-out;
-  animation: infinite-load-wave 0.6s infinite ease-in-out;
-}
-
-.infinite-scroll-status .infinite-scroll-request span:last-child {
-  margin-right: 0;
-}
-
-.infinite-scroll-status .infinite-scroll-request span:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.infinite-scroll-status .infinite-scroll-request span:nth-child(3) {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.infinite-scroll-status .infinite-scroll-request span:nth-child(4) {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-@keyframes infinite-load-wave {
-  0% {
-    margin-bottom: 0;
-  }
-  50% {
-    margin-bottom: 6px;
-  }
-  100% {
-    margin-bottom: 0;
-  }
-}
-
-.bg-dark .infinite-scroll-status, .bg-dark-lighter .infinite-scroll-status, .bg-dark-lightest .infinite-scroll-status,
-.bg-black-01 .infinite-scroll-status, .bg-black-02 .infinite-scroll-status, .bg-black-03 .infinite-scroll-status, .bg-black-04 .infinite-scroll-status, .bg-black-05 .infinite-scroll-status, .bg-black-06 .infinite-scroll-status, .bg-black-07 .infinite-scroll-status, .bg-black-08 .infinite-scroll-status, .bg-black-09 .infinite-scroll-status {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.bg-dark .infinite-scroll-status .infinite-scroll-request span, .bg-dark-lighter .infinite-scroll-status .infinite-scroll-request span, .bg-dark-lightest .infinite-scroll-status .infinite-scroll-request span,
-.bg-black-01 .infinite-scroll-status .infinite-scroll-request span, .bg-black-02 .infinite-scroll-status .infinite-scroll-request span, .bg-black-03 .infinite-scroll-status .infinite-scroll-request span, .bg-black-04 .infinite-scroll-status .infinite-scroll-request span, .bg-black-05 .infinite-scroll-status .infinite-scroll-request span, .bg-black-06 .infinite-scroll-status .infinite-scroll-request span, .bg-black-07 .infinite-scroll-status .infinite-scroll-request span, .bg-black-08 .infinite-scroll-status .infinite-scroll-request span, .bg-black-09 .infinite-scroll-status .infinite-scroll-request span {
-  background: #fff;
-}
-
 .parallax-portfolio-item {
   position: relative;
   background-size: cover;
@@ -8309,7 +8526,7 @@ body.loaded:after {
   opacity: 0;
   width: 60px;
   height: 60px;
-  background: #1e1e1e;
+  background: #1b1b1b;
   border-radius: 50%;
   -webkit-animation: loader-three-scaleSpan 1.2s infinite linear;
   animation: loader-three-scaleSpan 1.2s infinite linear;
@@ -8737,8 +8954,8 @@ body.loaded:after {
 
 .preloader-11 div .spinner {
   display: inline-block;
-  background: #1e1e1e;
-  background: linear-gradient(to right, #1e1e1e 10%, rgba(30, 30, 30, 0) 42%);
+  background: #1b1b1b;
+  background: linear-gradient(to right, #1b1b1b 10%, rgba(30, 30, 30, 0) 42%);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -8754,7 +8971,7 @@ body.loaded:after {
 }
 
 .preloader-11 div .spinner:before {
-  background: #1e1e1e;
+  background: #1b1b1b;
   width: 50%;
   height: 50%;
   border-radius: 100% 0 0 0;
@@ -8793,7 +9010,7 @@ body.loaded:after {
 }
 
 .prices-box {
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 30px;
   text-align: center;
 }
@@ -8844,39 +9061,7 @@ body.loaded:after {
 }
 
 .prices-box.prices-box-recommended {
-  border-color: #141414;
-}
-
-.bg-grey .prices-box, .bg-grey-lighter .prices-box, .bg-grey-lightest .prices-box,
-.bg-grey-gradient-top .prices-box, .bg-grey-gradient-right .prices-box, .bg-grey-gradient-bottom .prices-box, .bg-grey-gradient-left .prices-box {
-  background: #fff;
-  border: 0;
-}
-
-.bg-grey .prices-box.prices-box-recommended, .bg-grey-lighter .prices-box.prices-box-recommended, .bg-grey-lightest .prices-box.prices-box-recommended,
-.bg-grey-gradient-top .prices-box.prices-box-recommended, .bg-grey-gradient-right .prices-box.prices-box-recommended, .bg-grey-gradient-bottom .prices-box.prices-box-recommended, .bg-grey-gradient-left .prices-box.prices-box-recommended {
-  background: #282828;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.bg-grey .prices-box.prices-box-recommended h1, .bg-grey .prices-box.prices-box-recommended h2, .bg-grey .prices-box.prices-box-recommended h3, .bg-grey .prices-box.prices-box-recommended h4, .bg-grey .prices-box.prices-box-recommended h5, .bg-grey .prices-box.prices-box-recommended h6, .bg-grey-lighter .prices-box.prices-box-recommended h1, .bg-grey-lighter .prices-box.prices-box-recommended h2, .bg-grey-lighter .prices-box.prices-box-recommended h3, .bg-grey-lighter .prices-box.prices-box-recommended h4, .bg-grey-lighter .prices-box.prices-box-recommended h5, .bg-grey-lighter .prices-box.prices-box-recommended h6, .bg-grey-lightest .prices-box.prices-box-recommended h1, .bg-grey-lightest .prices-box.prices-box-recommended h2, .bg-grey-lightest .prices-box.prices-box-recommended h3, .bg-grey-lightest .prices-box.prices-box-recommended h4, .bg-grey-lightest .prices-box.prices-box-recommended h5, .bg-grey-lightest .prices-box.prices-box-recommended h6,
-.bg-grey-gradient-top .prices-box.prices-box-recommended h1,
-.bg-grey-gradient-top .prices-box.prices-box-recommended h2,
-.bg-grey-gradient-top .prices-box.prices-box-recommended h3,
-.bg-grey-gradient-top .prices-box.prices-box-recommended h4,
-.bg-grey-gradient-top .prices-box.prices-box-recommended h5,
-.bg-grey-gradient-top .prices-box.prices-box-recommended h6, .bg-grey-gradient-right .prices-box.prices-box-recommended h1, .bg-grey-gradient-right .prices-box.prices-box-recommended h2, .bg-grey-gradient-right .prices-box.prices-box-recommended h3, .bg-grey-gradient-right .prices-box.prices-box-recommended h4, .bg-grey-gradient-right .prices-box.prices-box-recommended h5, .bg-grey-gradient-right .prices-box.prices-box-recommended h6, .bg-grey-gradient-bottom .prices-box.prices-box-recommended h1, .bg-grey-gradient-bottom .prices-box.prices-box-recommended h2, .bg-grey-gradient-bottom .prices-box.prices-box-recommended h3, .bg-grey-gradient-bottom .prices-box.prices-box-recommended h4, .bg-grey-gradient-bottom .prices-box.prices-box-recommended h5, .bg-grey-gradient-bottom .prices-box.prices-box-recommended h6, .bg-grey-gradient-left .prices-box.prices-box-recommended h1, .bg-grey-gradient-left .prices-box.prices-box-recommended h2, .bg-grey-gradient-left .prices-box.prices-box-recommended h3, .bg-grey-gradient-left .prices-box.prices-box-recommended h4, .bg-grey-gradient-left .prices-box.prices-box-recommended h5, .bg-grey-gradient-left .prices-box.prices-box-recommended h6 {
-  color: #fff;
-}
-
-.bg-grey .prices-box.prices-box-recommended .price h1 span, .bg-grey .prices-box.prices-box-recommended .price h2 span, .bg-grey .prices-box.prices-box-recommended .price h3 span, .bg-grey .prices-box.prices-box-recommended .price h4 span, .bg-grey .prices-box.prices-box-recommended .price h5 span, .bg-grey .prices-box.prices-box-recommended .price h6 span, .bg-grey-lighter .prices-box.prices-box-recommended .price h1 span, .bg-grey-lighter .prices-box.prices-box-recommended .price h2 span, .bg-grey-lighter .prices-box.prices-box-recommended .price h3 span, .bg-grey-lighter .prices-box.prices-box-recommended .price h4 span, .bg-grey-lighter .prices-box.prices-box-recommended .price h5 span, .bg-grey-lighter .prices-box.prices-box-recommended .price h6 span, .bg-grey-lightest .prices-box.prices-box-recommended .price h1 span, .bg-grey-lightest .prices-box.prices-box-recommended .price h2 span, .bg-grey-lightest .prices-box.prices-box-recommended .price h3 span, .bg-grey-lightest .prices-box.prices-box-recommended .price h4 span, .bg-grey-lightest .prices-box.prices-box-recommended .price h5 span, .bg-grey-lightest .prices-box.prices-box-recommended .price h6 span,
-.bg-grey-gradient-top .prices-box.prices-box-recommended .price h1 span,
-.bg-grey-gradient-top .prices-box.prices-box-recommended .price h2 span,
-.bg-grey-gradient-top .prices-box.prices-box-recommended .price h3 span,
-.bg-grey-gradient-top .prices-box.prices-box-recommended .price h4 span,
-.bg-grey-gradient-top .prices-box.prices-box-recommended .price h5 span,
-.bg-grey-gradient-top .prices-box.prices-box-recommended .price h6 span, .bg-grey-gradient-right .prices-box.prices-box-recommended .price h1 span, .bg-grey-gradient-right .prices-box.prices-box-recommended .price h2 span, .bg-grey-gradient-right .prices-box.prices-box-recommended .price h3 span, .bg-grey-gradient-right .prices-box.prices-box-recommended .price h4 span, .bg-grey-gradient-right .prices-box.prices-box-recommended .price h5 span, .bg-grey-gradient-right .prices-box.prices-box-recommended .price h6 span, .bg-grey-gradient-bottom .prices-box.prices-box-recommended .price h1 span, .bg-grey-gradient-bottom .prices-box.prices-box-recommended .price h2 span, .bg-grey-gradient-bottom .prices-box.prices-box-recommended .price h3 span, .bg-grey-gradient-bottom .prices-box.prices-box-recommended .price h4 span, .bg-grey-gradient-bottom .prices-box.prices-box-recommended .price h5 span, .bg-grey-gradient-bottom .prices-box.prices-box-recommended .price h6 span, .bg-grey-gradient-left .prices-box.prices-box-recommended .price h1 span, .bg-grey-gradient-left .prices-box.prices-box-recommended .price h2 span, .bg-grey-gradient-left .prices-box.prices-box-recommended .price h3 span, .bg-grey-gradient-left .prices-box.prices-box-recommended .price h4 span, .bg-grey-gradient-left .prices-box.prices-box-recommended .price h5 span, .bg-grey-gradient-left .prices-box.prices-box-recommended .price h6 span {
-  color: rgba(255, 255, 255, 0.5);
+  border-color: #000;
 }
 
 .bg-dark .prices-box, .bg-dark-lighter .prices-box, .bg-dark-lightest .prices-box, div[class^='bg-black'] .prices-box, div[class*=' bg-black'] .prices-box {
@@ -8895,10 +9080,10 @@ body.loaded:after {
   z-index: 997;
   visibility: hidden;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
-  cursor: url(../images/cursor.png), auto;
+  cursor: url(../images/cursor-white.png), auto;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
@@ -9008,6 +9193,10 @@ body.loaded:after {
   color: #fff;
 }
 
+.search-wrapper.search-style-2 {
+  background: rgba(0, 0, 0, 0.9);
+}
+
 .search-wrapper.search-style-3 {
   background: #fff;
   cursor: url(../images/cursor-black.png), auto;
@@ -9023,7 +9212,7 @@ body.loaded:after {
 }
 
 .search-wrapper.search-style-4 {
-  background: #141414;
+  background: #000;
 }
 
 @media (max-width: 992px) {
@@ -9072,6 +9261,14 @@ body.loaded:after {
   padding: 200px 20px;
 }
 
+.section-2xl {
+  padding: 240px 0;
+}
+
+.section-2xl.bg-image .container, .section-2xl.bg-image .container-fluid {
+  padding: 240px 20px;
+}
+
 @media (max-width: 768px) {
   .section-xs {
     padding: 30px 0;
@@ -9092,15 +9289,21 @@ body.loaded:after {
     padding: 80px 20px;
   }
   .section-lg {
-    padding: 140px 0;
+    padding: 120px 0;
   }
   .section-lg.bg-image .container, .section-lg.bg-image .container-fluid {
-    padding: 140px 20px;
+    padding: 120px 20px;
   }
   .section-xl {
-    padding: 180px 0;
+    padding: 160px 0;
   }
   .section-xl.bg-image .container, .section-xl.bg-image .container-fluid {
+    padding: 160px 20px;
+  }
+  .section-2xl {
+    padding: 180px 0;
+  }
+  .section-2xl.bg-image .container, .section-2xl.bg-image .container-fluid {
     padding: 180px 20px;
   }
 }
@@ -9109,7 +9312,8 @@ body.loaded:after {
 .section-sm.bg-image,
 .section.bg-image, .section-md.bg-image,
 .section-lg.bg-image,
-.section-xl.bg-image {
+.section-xl.bg-image,
+.section-2xl.bg-image {
   padding: 0;
 }
 
@@ -9150,11 +9354,7 @@ body.loaded:after {
   height: 100%;
 }
 
-.section-fullscreen div[class^='bg-black'], .section-fullscreen div[class*=' bg-black'],
-.section-fullscreen .bg-white, .section-fullscreen div[class^='bg-white-0'], .section-fullscreen div[class*=' bg-white-0'] {
-  height: 100%;
-}
-
+.section-fullscreen div[class^='bg-black'], .section-fullscreen div[class*=' bg-black'], .section-fullscreen div[class^='bg-white'], .section-fullscreen div[class*=' bg-white'], .section-fullscreen div[class^='bg-dark'], .section-fullscreen div[class*=' bg-dark'], .section-fullscreen div[class^='bg-grey'], .section-fullscreen div[class*=' bg-grey'],
 .section-fullscreen .container, .section-fullscreen .container-fluid {
   height: 100%;
 }
@@ -9811,7 +10011,7 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 70px;
 }
 
 .product-single .product-single-img .product-single-img-nav a {
@@ -10718,7 +10918,7 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   left: 0;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
-  background: #1e1e1e;
+  background: #1b1b1b;
   width: 100%;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
@@ -11099,7 +11299,7 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
 .fullscreen-toggle-btn .lines {
   position: relative;
   display: inline-block;
-  background: #141414;
+  background: #000;
   width: 18px;
   height: 2px;
   margin: 0;
@@ -11113,7 +11313,7 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   content: '';
   position: absolute;
   left: 0;
-  background: #141414;
+  background: #000;
   width: 18px;
   height: 2px;
   display: inline-block;
@@ -11134,6 +11334,12 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   opacity: 0;
 }
 
+.fullscreen-toggle-btn.position-center {
+  right: auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .row .fullscreen-toggle-btn {
   right: 0;
 }
@@ -11143,7 +11349,7 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
 }
 
 .navbar-shrink.navbar-absolute .fullscreen-toggle-btn .lines, .navbar-shrink.navbar-absolute .fullscreen-toggle-btn .lines:before, .navbar-shrink.navbar-absolute .fullscreen-toggle-btn .lines:after {
-  background: #141414;
+  background: #000;
 }
 
 .fullscreen-menu {
@@ -11153,10 +11359,8 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   z-index: 997;
   visibility: hidden;
   opacity: 0;
-  background: #141414;
   width: 100%;
   height: 100%;
-  cursor: url(./images/cursor.png), auto;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
@@ -11165,49 +11369,14 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   -webkit-transform: scale(0.98);
   transform: scale(0.98);
   height: 100%;
-  color: rgba(255, 255, 255, 0.6);
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
-}
-
-.fullscreen-menu .fullscreen-menu-wrapper h1, .fullscreen-menu .fullscreen-menu-wrapper h2, .fullscreen-menu .fullscreen-menu-wrapper h3, .fullscreen-menu .fullscreen-menu-wrapper h4, .fullscreen-menu .fullscreen-menu-wrapper h5, .fullscreen-menu .fullscreen-menu-wrapper h6 {
-  color: #fff;
 }
 
 .fullscreen-menu .fullscreen-menu-wrapper .position-top,
 .fullscreen-menu .fullscreen-menu-wrapper .position-middle,
 .fullscreen-menu .fullscreen-menu-wrapper .position-bottom {
   padding: 0 20px;
-}
-
-.fullscreen-menu .fullscreen-menu-wrapper .position-middle ul {
-  margin: 0;
-  padding: 0;
-}
-
-.fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li {
-  list-style-type: none;
-  margin: 5px 0;
-}
-
-.fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a {
-  display: inline-block;
-  color: #fff;
-}
-
-.fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h1, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h2, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h3, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h4, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h5, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h6 {
-  margin: 0;
-  color: #fff;
-  -webkit-transition: linear 0.1s;
-  transition: linear 0.1s;
-}
-
-.fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h1:hover, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h2:hover, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h3:hover, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h4:hover, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h5:hover, .fullscreen-menu .fullscreen-menu-wrapper .position-middle ul li a h6:hover {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 @media (min-width: 768px) {
@@ -11224,14 +11393,6 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   }
 }
 
-.fullscreen-menu a {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.fullscreen-menu a:hover, .fullscreen-menu a:focus {
-  color: #fff;
-}
-
 .fullscreen-menu.fullscreen-menu-show {
   visibility: visible;
   opacity: 1;
@@ -11242,14 +11403,17 @@ div[class*=' bg-black'].sidebar-nav-content .sidebar-bottom {
   transform: scale(1);
 }
 
-.fullscreen-menu.fullscreen-menu-layout-2 .fullscreen-menu-wrapper .position-middle ul li {
-  display: inline-block;
-  margin: 5px 15px;
+.bg-dark.fullscreen-menu, .bg-dark-lighter.fullscreen-menu, .bg-dark-lightest.fullscreen-menu, div[class^='bg-black'].fullscreen-menu, div[class*=' bg-black'].fullscreen-menu {
+  cursor: url(../images/cursor-white.png), auto;
+}
+
+.bg-grey.fullscreen-menu, .bg-grey-lighter.fullscreen-menu, .bg-grey-lightest.fullscreen-menu, div[class^='bg-white'].fullscreen-menu, div[class*=' bg-white'].fullscreen-menu {
+  cursor: url(../images/cursor-black.png), auto;
 }
 
 @media (max-width: 992px) {
   .fullscreen-menu {
-    cursor: pointer;
+    cursor: pointer !important;
   }
 }
 

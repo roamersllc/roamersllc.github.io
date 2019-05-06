@@ -3,6 +3,27 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+.container .gallery-wrapper.spacing-15 {
+  margin: 0 -7.5px -15px;
+}
+
+.spacing-15 .portfolio-item {
+  padding: 7.5px;
+}
+
+.container .portfolio-wrapper.spacing-15 {
+  margin: -7.5px;
+}
+
+.container-fluid .portfolio-wrapper.spacing-15 {
+  margin: -7.5px -22.5px 7.5px;
+}
+
+.gallery-wrapper.spacing-15 div[class^="col-"]:not(.row) {
+  margin-bottom: 15px;
+  padding: 0 7.5px;
+}
+
 .col-spacing-15 {
   margin-right: -7.5px;
   margin-bottom: -15px;

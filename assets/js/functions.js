@@ -420,7 +420,7 @@ $(function() {
   /*===============================================
     Portfolio
   ===============================================*/
-  $(".portfolio-wrapper").imagesLoaded( function() {
+  $(".portfolio-wrapper").imagesLoaded(function() {
     var $portfolioWrapper = $(".portfolio-wrapper").isotope({
       itemSelector: ".portfolio-item",
       transitionDuration: 300 // 0.3 second
@@ -533,8 +533,10 @@ $(function() {
   /*===============================================
     Blog Masonry
   ===============================================*/
-  $(".blog-masonry").masonry({
-    itemSelector: '.blog-post-box'
+  $(window).on("load", function () {
+    $(".blog-masonry").masonry({
+      itemSelector: '.blog-post-box'
+    });
   });
   
 
@@ -646,10 +648,10 @@ $(function() {
 
     $(this).countdown(finalDate, function(event) {
       $(this).html(event.strftime(''
-        + '<div><h2 class="font-light">%D</h2><h6 class="heading-uppercase">Days</h6></div>'
-        + '<div><h2 class="font-light">%H</h2><h6 class="heading-uppercase">Hours</h6></div>'
-        + '<div><h2 class="font-light">%M</h2><h6 class="heading-uppercase">Minutes</h6></div>'
-        + '<div><h2 class="font-light">%S</h2><h6 class="heading-uppercase">Seconds</h6></div>'));
+        + '<div><h2 class="font-weight-normal">%D</h2><h6 class="heading-uppercase">Days</h6></div>'
+        + '<div><h2 class="font-weight-normal">%H</h2><h6 class="heading-uppercase">Hours</h6></div>'
+        + '<div><h2 class="font-weight-normal">%M</h2><h6 class="heading-uppercase">Minutes</h6></div>'
+        + '<div><h2 class="font-weight-normal">%S</h2><h6 class="heading-uppercase">Seconds</h6></div>'));
     });
   });
 
@@ -668,46 +670,48 @@ $(function() {
   /*===============================================
     Accordion
   ===============================================*/
-  var accordionTitle = $(".accordion-title");
+  $(".accordion-title").each(function() {
 
-  accordionTitle.on("click", function() {
-    var accordionList = $(this).parent("li");
-    var accordionContent = this.nextElementSibling;
+    var $this = $(this);
 
-    if (accordionList.hasClass("active")) {
-      accordionList.removeClass("active");
-      accordionContent.style.maxHeight = null;
-    }
-    else {
-      accordionList.addClass("active");
-      if ($(this).closest(".accordion").hasClass("accordion-oneopen")) {
-        $(this).closest(".accordion").children("li").removeClass("active");
-        accordionList.addClass("active");
-        $(".accordion-oneopen > li > .accordion-content").css("max-height", "0");
+    $this.on("click", function() {
+      var accordionList = $this.parent("li");
+      var accordionContent = this.nextElementSibling;
+
+      if (accordionList.hasClass("active")) {
+        accordionList.removeClass("active");
+        accordionContent.style.maxHeight = null;
       }
-      accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-    }
-  });
+      else {
+        accordionList.addClass("active");
+        if ($this.closest(".accordion").hasClass("accordion-oneopen")) {
+          $this.closest(".accordion").children("li").removeClass("active");
+          accordionList.addClass("active");
+          $this.parents(".accordion-oneopen").find(".accordion-content").css("max-height", "0");
+        }
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+      }
+    });
 
-  //
-  // Give max-height to Accordion's active content //
-  //
-  if ($(".accordion li").hasClass("active")) {
-    var accordionActiveContent = $(".accordion > li.active > .accordion-content");
-    var accordionHeight = accordionActiveContent.prop("scrollHeight");
-    
-    accordionActiveContent.css({'max-height': accordionHeight + "px"});
-  }
+    //
+    // Give max-height to Accordion's active content //
+    //
+    if ($this.parents(".accordion").find("li").hasClass("active")) {
+      var accordionActiveContent = $this.parents(".accordion").find("li.active").children(".accordion-content");
+      var accordionHeight = accordionActiveContent.prop("scrollHeight");
+      
+      accordionActiveContent.css({'max-height': accordionHeight + "px"});
+    }
+
+  });
 
   
   /*===============================================
-    Fun Facts Counter
+    Counter
   ===============================================*/
-  $(".facts-wrapper").appear(function() {
+  $(".counter").appear(function() {
 
-    var fcounter = $(".facts-counter");
-
-    fcounter.each(function () {
+    $(this).each(function () {
       $(this).prop("Counter",0).animate({
           Counter: $(this).text()
       }, {
@@ -718,7 +722,7 @@ $(function() {
           }
       });
     });
-
+    
   },{accX: 0, accY: -10});
 
 
@@ -795,26 +799,52 @@ $(function() {
 
 
   /*===============================================
-    Google Maps
+    Easy Pie Chart
   ===============================================*/
-  var mapCanvas = $("#map-canvas");
+  $(".pie-chart").appear(function() {
 
-  if (mapCanvas.length) {
-    var initLatitude = mapCanvas.attr("data-latitude");
-    var initLongitude = mapCanvas.attr("data-longitude");
-
-    var map = new GMaps({
-      el: "#map-canvas",
-      lat: initLatitude,
-      lng: initLongitude,
-      zoom: 16,
-      scrollwheel: false
+    $(this).each(function() {
+      $(this).easyPieChart({
+        lineCap: 'square',
+        onStep: function(from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
     });
     
-    map.addMarker({
-      lat : initLatitude,
-      lng : initLongitude
-    });
+  },{accX: 0, accY: -10});
+
+
+  /*===============================================
+    Google Maps
+  ===============================================*/
+  var mapCanvas = $(".gmap");
+  var m,divId,initLatitude, initLongitude, map;
+
+  if (mapCanvas.length) {
+    for (var i = 0; i < mapCanvas.length; i++) {
+      m = mapCanvas[i];
+
+      initLatitude = m.dataset["latitude"];
+      initLongitude = m.dataset["longitude"];
+      divId = "#"+ m["id"];
+
+      map = new GMaps({
+        el: divId,
+        lat: initLatitude,
+        lng: initLongitude,
+        zoom: 16,
+        scrollwheel: false,
+        styles: [
+            /* style your map at https://snazzymaps.com/editor and paste JSON here */
+        ]
+      });
+
+      map.addMarker({
+        lat : initLatitude,
+        lng : initLongitude
+      });
+    }
   }
 
 

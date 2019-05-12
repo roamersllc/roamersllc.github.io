@@ -3,6 +3,55 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+.underlineload {
+    color: black;
+
+    display: inline-block;
+    position: relative;
+    top: -100;
+  }
+
+.underlineload:hover:after {
+width:100%;
+right: 0;
+}
+
+.underlineload:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  background: #000;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+
+.underlineloadbold {
+    display: inline-block;
+    position: relative;
+  }
+
+.underlineloadbold:hover:after {
+width:100%;
+right: 0;
+}
+
+.underlineloadbold:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #000;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+
 .container .gallery-wrapper.spacing-15 {
   margin: 0 -7.5px -15px;
 }
@@ -837,6 +886,10 @@ a {
   color: #141414;
   -webkit-transition: linear 0.1s !important;
   transition: linear 0.1s !important;
+}
+
+a:hover {
+    color: #000 !important;
 }
 
 @media (min-width: 993px) {

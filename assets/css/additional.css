@@ -889,7 +889,6 @@ a {
 }
 
 a:hover {
-    color: #000 !important;
 }
 
 @media (min-width: 993px) {

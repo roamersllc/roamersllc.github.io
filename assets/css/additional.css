@@ -3,6 +3,18 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+@media (min-width: 0px) {
+.padding-bottom-quote {
+  padding-bottom: 80px !important;
+}
+}
+
+@media (min-width: 992px) {
+.padding-bottom-quote {
+  padding-bottom: 60px !important;
+}
+}
+
 .underlineload {
     color: black;
 

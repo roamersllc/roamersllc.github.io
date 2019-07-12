@@ -211,10 +211,18 @@ table {
   transform: translateX(0%);
 }
 
-.dropdown-padding {
-padding-left: 30px;
-padding-right: 30px;
-height: 100%;
+@media (min-width: 0px) {
+.blog-padding {
+  padding: 30px;
+  height: 100%;
+}
+}
+
+@media (min-width: 576px) {
+.blog-padding {
+  padding: 60px;
+  height: 100%;
+}
 }
 
 .pricepill {

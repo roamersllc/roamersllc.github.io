@@ -254,6 +254,16 @@ padding-right: 13px;
 color:#000;
 }
 
+.homepill {
+border-style:solid;
+border-color:#fff;
+background-color:#fff;
+padding: 0px;
+padding-left: 35px;
+padding-right: 35px;
+color:#000;
+}
+
 @media (min-width: 576px) {
   .ingredient-padding {
       padding-left: 0px !important;

@@ -1008,6 +1008,10 @@ a:hover {
   color: #141414 !important;
 }
 
+.light-grey-text {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
 .green-text {
   color: #08a045 !important;
 }

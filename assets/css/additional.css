@@ -37,7 +37,7 @@ right: 0;
   left: 0;
   position: absolute;
   background: #000;
-  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  transition: width 0.75s ease 0s, left 0.75s ease 0s;
   width: 0;
 }
 
@@ -56,11 +56,11 @@ right: 0;
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
   left: 0;
   position: absolute;
-  background: #000;
-  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  background: #fff;
+  transition: width 1s ease 0s, left 1s ease 0s;
   width: 0;
 }
 
@@ -109,12 +109,12 @@ right: 0;
 
 .paypalcards {
   width: 300px;
-  align: center;
+  align: center !important;
 }
 
 .menulogo {
   width: 240px;
-  align: center;
+  align: center !important;
 }
 
 @media (min-width: 0px) {
@@ -549,17 +549,17 @@ border-width: 10px;
 
 .align-centre-div {
 
- height: 100%;
- width: 100%;
- display: table;
- text-align: center;
+ height: 100% !important;
+ width: 100% !important;
+ display: table !important;
+ text-align: center !important;
 
 }
 
 .align-centre-content {
 
-display: table-cell;
-vertical-align: middle;
+display: table-cell !important;
+vertical-align: middle !important;
 
 }
 

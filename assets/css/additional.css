@@ -590,14 +590,14 @@ vertical-align: middle !important;
 
   @media (min-width: 992px) {
   .block-run {
-      height: 216px !important;
+      height: 217px !important;
       width: 100% !important;
     }
     }
 
   @media (min-width: 1200px) {
   .block-run {
-      height: 216px !important;
+      height: 217px !important;
       width: 100% !important;
     }
     }
@@ -610,14 +610,14 @@ vertical-align: middle !important;
 
 @media (min-width: 992px) {
 .block-square {
-    height: 202px !important;
+    height: 217px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-square {
-    height: 187px !important;
+    height: 203px !important;
     width: 100% !important;
   }
   }

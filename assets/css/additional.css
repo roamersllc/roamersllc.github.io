@@ -167,8 +167,11 @@ right: 0;
 
 @media (min-width: 0px) {
 .paypalbutton2 {
-    width: 100% !important;
+    width: 180px !important;
     height:auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-width: 0px !important;
           visibility: visible;
 }

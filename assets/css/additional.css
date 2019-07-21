@@ -612,14 +612,14 @@ vertical-align: middle !important;
 
 @media (min-width: 992px) {
 .block-square {
-    height: 140px !important;
+    height: 160px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-square {
-    height: 130px !important;
+    height: 150px !important;
     width: 100% !important;
   }
   }

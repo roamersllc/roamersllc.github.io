@@ -612,14 +612,14 @@ vertical-align: middle !important;
 
 @media (min-width: 992px) {
 .block-square {
-    height: 217px !important;
+    height: 140px !important;
     width: 100% !important;
   }
   }
 
 @media (min-width: 1200px) {
 .block-square {
-    height: 203px !important;
+    height: 130px !important;
     width: 100% !important;
   }
   }
@@ -923,13 +923,14 @@ body {
 }
 
 a {
-  color: #141414;
+  color: #000;
   -webkit-transition: linear 0.1s !important;
   transition: linear 0.1s !important;
+    font-weight: 600 !important;
 }
 
 a:hover {
-
+  color: #08a045 !important;
 }
 
 @media (min-width: 993px) {

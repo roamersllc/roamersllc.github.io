@@ -879,6 +879,12 @@ a.divLink {
   }
 }
 
+.nav-link:hover {
+
+color: #000 !important;
+
+}
+
 @media (max-width: 992px) {
   .navbar .container, .navbar .container-fluid {
     height: 100px !important;

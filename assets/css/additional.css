@@ -3,6 +3,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 
+.hover-style-4 .portfolio-item .portfolio-box .portfolio-title {
+  -webkit-transform: translateY(0%) !important;
+  transform: translateY(0%) !important;
+  background: rgba(255, 255, 255, 1.0) !important;
+}
+
 .description-border {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding:10px;

@@ -8145,8 +8145,6 @@ button.mfp-close:hover {
 }
 
 .hover-style-4 .portfolio-item .portfolio-box:hover .portfolio-img img {
-  -webkit-transform: translateY(-20px);
-  transform: translateY(-20px);
   -webkit-filter: blur(0);
   filter: blur(0);
 }

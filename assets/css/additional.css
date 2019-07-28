@@ -269,6 +269,18 @@ padding-right: 13px;
 color:#000;
 }
 
+.warningpill {
+border:0.25em;
+border-radius: 20px;
+border-style:solid;
+border-color:#d10000;
+background-color:#d10000;
+padding: 0px;
+padding-left: 13px;
+padding-right: 13px;
+color:#fff;
+}
+
 .homepill {
 border-style:solid;
 border-color:#fff;

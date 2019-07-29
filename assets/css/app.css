@@ -5706,22 +5706,22 @@ ol.list-ordered-style-5 li::before {
 }
 
 .pagination.hover-style-2 .page-item .page-link:hover {
-  background: rgba(255, 255, 255, 0.65);
-  border-color: #fff;
+  background: rgba(255, 255, 255, 0) !important;
+  border-color: rgba(255, 255, 255, 0) !important;
     padding-right:1px;
     padding-top:0px;
 }
 
 .navigationbutton {
   background: rgba(255, 255, 255, 0.0) !important;
-  border-color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.0) !important;
     padding-right:1px !important;
     padding-top:2px !important;
 }
 
 .navigationbutton:hover {
-  background: rgba(255, 255, 255, 0.0) !important;
-  border-color: #fff !important;
+  background: rgba(255, 255, 255, 0.0 ) !important;
+  border-color: rgba(255, 255, 255, 0.0) !important;
     padding-right:1px; !important;
     padding-top:0px; !important;
 }
@@ -5729,9 +5729,9 @@ ol.list-ordered-style-5 li::before {
 .pagination.hover-style-2 .page-item.active .page-link {
   padding-right:1px;
   padding-top:2px;
-  background: #141414;
-  border-color: #141414;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.0) !important;
+  border-color: rgba(255, 255, 255, 0.0) !important;
+  color: #000;
 }
 
 .bg-dark .pagination .page-item .page-link, .bg-dark-lighter .pagination .page-item .page-link, .bg-dark-lightest .pagination .page-item .page-link, div[class^='bg-black'] .pagination .page-item .page-link, div[class*=' bg-black'] .pagination .page-item .page-link {
@@ -5751,13 +5751,13 @@ ol.list-ordered-style-5 li::before {
 .bg-dark .pagination.hover-style-2 .page-item .page-link:hover, .bg-dark-lighter .pagination.hover-style-2 .page-item .page-link:hover, .bg-dark-lightest .pagination.hover-style-2 .page-item .page-link:hover, div[class^='bg-black'] .pagination.hover-style-2 .page-item .page-link:hover, div[class*=' bg-black'] .pagination.hover-style-2 .page-item .page-link:hover {
   background: #fff;
   border-color: #fff;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.0);
 }
 
 .bg-dark .pagination.hover-style-2 .page-item.active .page-link, .bg-dark-lighter .pagination.hover-style-2 .page-item.active .page-link, .bg-dark-lightest .pagination.hover-style-2 .page-item.active .page-link, div[class^='bg-black'] .pagination.hover-style-2 .page-item.active .page-link, div[class*=' bg-black'] .pagination.hover-style-2 .page-item.active .page-link {
   background: #fff;
   border-color: #fff;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.0);
 }
 
 .pie-chart {

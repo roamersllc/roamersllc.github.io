@@ -5638,7 +5638,7 @@ ol.list-ordered-style-5 li::before {
   border: 0px solid #e6e6e6;
   border-radius: 20px;
   padding: 0;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.2);
   font-size: 14px;
   line-height: 31px;
   -webkit-transition: linear 0.1s;
@@ -5648,21 +5648,21 @@ ol.list-ordered-style-5 li::before {
 }
 
 .pagination .page-item .page-link:hover {
-  background: transparent;
-  border-color: #141414;
+  background: rgba(255, 255, 255, 0.0) !important;
+  border-color: rgba(255, 255, 255, 0.0) !important;
   padding-top:0px;
 }
 
 .pagination .page-item.active .page-link {
   background: transparent;
-  border-color: #141414;
-  color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(255, 255, 255, 0.0) !important;
+  color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .pagination.pagination-sm .page-item .page-link {
   min-width: 27px;
   height: 27px;
-  border-radius: 20px;
+  border-radius: 0px;
   padding: 0;
   line-height: 27px;
 }
@@ -5670,7 +5670,7 @@ ol.list-ordered-style-5 li::before {
 .pagination.pagination-lg .page-item .page-link {
   min-width: 35px;
   height: 35px;
-  border-radius: 20px;
+  border-radius: 0px;
   padding: 0;
   line-height: 35px;
 }
@@ -5706,8 +5706,8 @@ ol.list-ordered-style-5 li::before {
 }
 
 .pagination.hover-style-2 .page-item .page-link:hover {
-  background: rgba(255, 255, 255, 0) !important;
-  border-color: rgba(255, 255, 255, 0) !important;
+  background: rgba(255, 255, 255, 0.0) !important;
+  border-color: rgba(255, 255, 255, 0.0) !important;
     padding-right:1px;
     padding-top:0px;
 }

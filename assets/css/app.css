@@ -5632,10 +5632,10 @@ ol.list-ordered-style-5 li::before {
 }
 
 .pagination .page-item .page-link {
-  background: transparent;
+  background: #fff;
   min-width: 31px;
   height: 31px;
-  border: 1px solid #e6e6e6;
+  border: 0px solid #e6e6e6;
   border-radius: 20px;
   padding: 0;
   color: rgba(0, 0, 0, 0.9);
@@ -5643,6 +5643,8 @@ ol.list-ordered-style-5 li::before {
   line-height: 31px;
   -webkit-transition: linear 0.1s;
   transition: linear 0.1s;
+    padding-left:1px;
+    padding-top:1px;
 }
 
 .pagination .page-item .page-link:hover {
@@ -5703,11 +5705,15 @@ ol.list-ordered-style-5 li::before {
 }
 
 .pagination.hover-style-2 .page-item .page-link:hover {
-  background: #e6e6e6;
-  border-color: #e6e6e6;
+  background: rgba(255, 255, 255, 0.65);
+  border-color: #fff;
+    padding-left:1px;
+    padding-top:1px;
 }
 
 .pagination.hover-style-2 .page-item.active .page-link {
+  padding-left:1px;
+  padding-top:1px;
   background: #141414;
   border-color: #141414;
   color: #fff;

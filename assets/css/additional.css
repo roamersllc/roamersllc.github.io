@@ -703,6 +703,45 @@ vertical-align: middle !important;
   width: 80px !important;
 }
 
+.bg-overlay-portrait {
+background: url("../images/photographs/roamers-about-portrait-round-mix.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+opacity: 1;
+color: #fff;
+width: 100% !important;
+  padding-top: 100% !important;
+  }
+
+@media (min-width: 992px) {
+.bg-overlay-portrait {
+background: url("../images/photographs/roamers-about-portrait-mix.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+opacity: 1;
+color: #fff;
+padding-top: 0px;
+    height: 600px !important;
+    width: 100% !important;
+  }
+  }
+
+@media (min-width: 1200px) {
+.bg-overlay-portrait {
+background: url("../images/photographs/roamers-about-portrait-mix.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+opacity: 1;
+color: #fff;
+padding-top: 0px;
+    height: 430px !important;
+    width: 100% !important;
+  }
+  }
+
 .bg-overlay-superseed-mix {
 background: linear-gradient(rgba(100,58,113,.5), rgba(100,58,113,.5)), url("../images/photographs/roamers-oats-almond-milk-cacao-honey-blueberry-bw.png");
 background-repeat: no-repeat;

@@ -637,7 +637,7 @@ vertical-align: middle !important;
 
 @media (min-width: 992px) {
 .block-square {
-    height: 190px !important;
+    height: 180px !important;
     width: 100% !important;
   }
   }
